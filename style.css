@@ -1,0 +1,70 @@
+body{
+    font-family: ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.header_title{
+    display: inline-block;
+}
+.header_title + sub{
+    background-color: #00696c;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+form#log_in {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px 0;
+    padding: 10px;
+    background: cornflowerblue;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px #333;
+    margin: 10px auto;
+    width: 500px;
+}
+
+form input {
+    padding: 10px;
+    border-left: none;
+    outline: none;
+    border-width: 1px;
+    border-color: black;
+}
+form label{
+    background-color: bisque;
+    border: 1px solid;
+    border-right: none;
+    padding: 10px;
+}
+input[type="submit"] {
+    grid-column: span 2;
+    justify-self: center;
+    padding: 10px 100px;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: aquamarine;
+}
+input[type="submit"]:hover{
+    background-color: rgb(38, 201, 147);
+    color: white;
+}
+small {
+    background: aquamarine;
+    padding: 5px;
+    color: brown;
+    display: inline-block;
+}
+small button {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+    background: #00696c;
+    color: white;
+    cursor: pointer;
+}

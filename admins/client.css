@@ -1,0 +1,91 @@
+
+.filter_box {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+    padding: 30px ;
+    box-shadow: 1px 1px 3px #333;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+.filter_box .search_box{
+    flex: 2;
+}
+
+
+
+.select_filter select {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 17px;
+    height: 100%;
+}
+.select_filter select option {
+    font-size: 20px;
+    background: #5a5a5a1c;
+}
+select > option:hover, select > option:checked{
+    background-color: rgba(173, 216, 230, 0.562);
+}
+
+table {
+    border: 1px solid #33333352;
+    width: 100%;
+    border-collapse: collapse;
+    padding: 10px;
+    background: aliceblue;
+}
+table tbody tr:hover{
+background-color: rgba(211, 211, 211, 0.375);
+}
+th, td {
+    border-bottom: 1px solid #33333352;
+    padding: 10px;
+    text-align: left;
+}
+th{
+    color: #6a7282;
+}
+td:first-child{
+    font-weight: 600;
+}
+td:not(td:first-child){
+    color: #6a7282;
+}
+td:nth-child(6) span{
+    display: block;
+    width: max-content;
+}
+td:nth-child(6) span:before {
+    content: "";
+    position: relative;
+    top: 5px;
+    left: 100%;
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 10px;
+}
+.active_st::before{
+    background: rgb(129, 255, 129);
+}
+.un_active_st::before{
+    background: rgb(250, 121, 121);
+}
+
+
+
+td .action a {
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+td .action a:first-of-type, td .action a:visited:first-of-type{
+color: green;
+}
+td .action a:last-of-type, td .action a:visited:last-of-type{
+color: red;
+}
+td .action a:hover{
+    background-color: rgba(211, 211, 211, 0.529);
+}
