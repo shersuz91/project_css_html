@@ -16,51 +16,64 @@ let our_clients = [
     {
         "id":1,
         "name":"Ahmed",
+        "last_name":"Ali",
         "email":"sdf@gmail.com",
         "comapny":"Gym",
-        "status":true,
-        "start":"2/3/2026",
-        "end":"2/3/2027",
+        "plan":"starter",
+        "start":"2026-3-2",
+        "notes":""
 
     },
     {
         "id":2,
         "name":"John",
+        "last_name":"Doe",
         "email":"john@gmail.com",
         "comapny":"Swimming",
-        "status":false,
-        "start":"1/1/2025",
-        "end":"1/1/2026"
+        "plan":"starter",
+        "start":"2025-1-1",
+        "notes":""
+
     },
     {
         "id":3,
         "name":"Sara",
+        "last_name":"Smith",
         "email":"sara@gmail.com",
         "comapny":"Music",
-        "status":true,
-        "start":"3/3/2026",
-        "end":"3/3/2027"
+        "plan":"starter",
+        "start":"2026-3-3",
+        "notes":""
     },
     {
         "id":4,
         "name":"Michal",
+        "last_name":"Smith",
         "email":"michal@gmail.com",
         "comapny":"Tennis",
-        "status":true,
-        "start":"4/4/2026",
-        "end":"4/4/2027"
+        "plan":"starter",
+        "start":"2026-4-4",
+        "notes":""
     },
     {
         "id":5,
         "name":"Emy",
+        "last_name":"Smith",
         "email":"emy@gmail.com",
         "comapny":"Tekondo",
-        "status":true,
-        "start":"5/5/2026",
-        "end":"5/5/2027"
+        "plan":"starter",
+        "start":"2026-5-5",
+        "notes":""
     }
     
 ]
 
+function add_client(data){
+    var all_client = JSON.parse(localStorage.getItem("clients_data"))
+    var new_id = all_client.at(-1)["id"] + 1
+    data["id"] = new_id
+    all_client.push(data)
+    localStorage.setItem("clients_data", JSON.stringify(all_client))
+}
 
-export {admins, our_clients}
+export {admins, our_clients, add_client}

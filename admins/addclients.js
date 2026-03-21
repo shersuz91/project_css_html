@@ -1,13 +1,33 @@
+import { add_client } from "../module.js"  
+var c_form = document.querySelector("form")
 var form_box  = document.getElementsByClassName("form_box ")
 var active_box  = document.getElementsByClassName("active_box")
 var active_span = document.getElementsByClassName("active_span") 
 var form_bar = document.querySelectorAll(".form_bar > span")
-function next(e){
+var btn_submit = document.querySelector("button[type='submit']")
+var get_form = document.getElementsByClassName("get_form")
+Array.from(get_form).forEach(element=>{
+    console.log(element)
+    element.addEventListener("click", function(e){
+        
+
      // set the first position of the form
         // when it start should be in the first section
-        pose =  Number(active_box[0].getAttribute("form_box"))
+        var pose =  Number(active_box[0].getAttribute("form_box"))
     // check if the pressed button is Next
-    if (e.textContent=="Next"){
+    if (e.target.textContent=="Next"){
+        var inputs = active_box[0].querySelectorAll("input, select")
+        // Here I check if the inputs in the current form box are valid or not
+       for (let i = 0; i< inputs.length; i++){
+        if (!inputs[i].checkValidity()){
+            inputs[i].nextElementSibling.style.display="block"
+            return
+        }
+        else{
+            inputs[i].nextElementSibling.style.display="none"
+        }
+        
+       }
         pose +=1
         // In this section I remove the active class from the span bar and from the current form box
         // **************************
@@ -23,9 +43,11 @@ function next(e){
         active_box[0].classList.remove("active_box")
         active_span[0].classList.remove("active_span")
         active_box[0].style.transform= "translateX(-"+pose*100+"%)"
+
+        
     }
     // check if the pressed button is Back
-    else if(e.textContent == "Back"){
+    else if(e.target.textContent == "Back"){
         pose -=1
         // We do the sam thing for the back direction but we don't add unactive span class(look at the unctive_span class in css)
         Array.from(active_box).at(-1).previousElementSibling.classList.add("active_box")
@@ -49,7 +71,33 @@ function next(e){
         else if (Array.from(form_box).at(-1).classList.contains("active_box")){
             // if it is in the last form box so no need to go next
             document.getElementsByClassName("next")[0].setAttribute("disabled", "true")
+            var new_form = new FormData(c_form)
+    var c_data = Object.fromEntries(new_form)
+    console.log(c_data["notes"])
+    for (let key in c_data){
+        document.getElementById(key).value = c_data[key]
+    }
         }
-    
+ 
 }
+)
+})
+
+btn_submit.addEventListener("click", function(e){
+    e.preventDefault()
+    var new_form = new FormData(c_form)
+    var c_data = Object.fromEntries(new_form)
+    console.log(c_data)
+    var new_client = {
+        "name":c_data["first_name"],
+        "last_name":c_data["last_name"],
+        "email":c_data["email"],
+        "comapny":c_data["service_type"],
+        "plan":c_data["plan"],
+        "start":c_data["start_date"],
+        "notes":c_data["notes"]
+    }
+    add_client(new_client)
+
+})
 

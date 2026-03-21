@@ -1,4 +1,4 @@
-import { admins } from "./module.js"
+import { admins, our_clients } from "./module.js"
 let form = document.querySelector("form")
 let submit = document.querySelector("input[type='submit']")
 submit.addEventListener("click", function(e){
@@ -18,7 +18,12 @@ submit.addEventListener("click", function(e){
                 localStorage.setItem("_password", admins[i].pass)
                 localStorage.setItem("_id", admins[i].id)
                 localStorage.setItem("_name_admin", admins[i].name)
+                if (localStorage.getItem("clients_data") == null){
+                    localStorage.setItem("clients_data", JSON.stringify(our_clients))
+                }
                 document.location.href="./check_account/check_account.html?id="+admins[i].id
+
+
             }
             else if (i == admins.length -1){
                 console.log("Not exist")
@@ -29,4 +34,6 @@ submit.addEventListener("click", function(e){
          
    
 })
+
+
 console.log(document.URL)

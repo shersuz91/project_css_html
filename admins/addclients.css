@@ -1,3 +1,8 @@
+
+
+#form_section, main, body{
+overflow: hidden;
+}
 .form_bar{
     display: flex;
     gap: 30px;
@@ -51,21 +56,21 @@ left: 100%;
     z-index: 3;
 }
 form{
+    overflow-y: auto;
+    height: 100vh;
     border-radius: 10px;
     padding: 0px;
-    /* background-color: white; */
     display: grid;
     gap: 0px;
     max-width: 700px;
     grid-template-columns: repeat(4, 100%);
-    overflow: hidden;
-  
+    align-items: start;
     position: relative;
     padding-bottom: 70px;
     margin: auto;
 }
 form.d-grid>div {
-    padding: 10px;
+    padding: 10px 10px 100px;
     position: relative;
     left: 0;
     border-radius: 10px;
@@ -129,21 +134,25 @@ form label:has(:required) span::after{
     color: var(--lred);
     margin-left: 3px;
 }
-#nav_form{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    opacity: 1;
+
+#control_form{
+    position: fixed;
+    top: calc(500px);
 }
-#nav_form button{
+.next, .prev{
 padding: 5px 20px;
 border: none;
 outline: none;
 border-radius: 10px;
 transition: .3s;
+left: 0;
+top: 100px;
+z-index: 100;
+background-color: white;
 }
 .next{
     background-color: var(--fourth_color);
+    left: 100%;
 }
 .next:hover{
     background-color: var(--third_color);
@@ -157,4 +166,10 @@ transition: .3s;
 }
 .next:disabled, .prev:disabled{
     cursor: not-allowed;
+}
+.alert{
+    color: red;
+    font-size: 14px;
+    padding: 0;
+    display: none;
 }

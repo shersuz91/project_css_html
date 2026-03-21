@@ -43,7 +43,7 @@
                     <p class="describe">Fill out the form below to add a new client</p>
                 </div>
             </section>
-                <section>
+                <section id="form_section">
                     <div class="form_bar">
                         <span class="active_span" form_bar=0>
                             <span>Client Information</span>
@@ -52,58 +52,101 @@
                         <span  form_bar=2><span>Notes</span></span>
                         <span  form_bar=3><span>Review</span></span>
                     </div>
+                    
                     <form action="" class="d-grid">
                         <div id="client_info" class="form_box active_box" form_box = 0>
                             <h2>Client Information</h2>
-                            <label><span>Client Name</span> <input type="text" required></label>
-                            <label ><span>Phone Number</span> <input type="tel" required></label>
+                            <label><span>Client First Name</span> <input name="first_name" type="text" required>
+                            <p class="alert">This is required.</p>
+                            </label>
+                            <label><span>Client Last Name</span> <input name="last_name" type="text" required>
+                            <p class="alert">This is required.</p>
+                            </label>
+                            <label><span>Email</span> <input name="email" type="email" required>
+                            <p class="alert">This is required.</p>
+                            </label>
+                            <label ><span>Phone Number</span> <input name="phone_number" type="tel" required>
+                            <p class="alert">This is required.</p>
+                            </label>
                             <label >
                                 <span>Service Type</span>
-                                <select name="" id="" required>
+                                <select name="service_type" id="" required>
                                     <option value="">Select Service</option>
-                                    <option value="">Gym</option>
-                                    <option value="">Teakwando</option>
-                                    <option value="">Music Class</option>
+                                    <option value="gym">Gym</option>
+                                    <option value="taekwondo">Taekwondo</option>
+                                    <option value="music_class">Music Class</option>
                                 </select>
+                                <p class="alert">This is required.</p>
                             </label>
+                            
                         </div>
                         <div id="select_plan" class="form_box " form_box = 1>
                             <h2>Plan Information</h2>
                             <label >
                                 <span>Select Plan</span>
-                                <select name="" id="" required>
+                                <select name="plan" id="" required>
                                     <option value="">Select Plan</option>
-                                    <option value="">Starter</option>
-                                    <option value="">Professional</option>
-                                    <option value="">Business</option>
-                                    <option value="">Enterprise</option>
+                                    <option value="starter">Starter</option>
+                                    <option value="professional">Professional</option>
+                                    <option value="business">Business</option>
+                                    <option value="enterprise">Enterprise</option>
                                 </select>
+                                <p class="alert">This is required.</p>
                             </label>
                             <label >
                                 <span>Start Date</span>
-                                <input type="date" name="" id="" required>
+                                <input type="date" name="start_date" id="" required>
+                                <p class="alert">This is required.</p>
                             </label>
+                            
                         </div>
-                        <div id="notes" class="form_box " form_box = 2>
+                        <div  class="form_box " form_box = 2>
                             <h2>Extra Information</h2>
                             <label >
                                 <span>Notes</span>
-                                <textarea name="" id="" placeholder="Add any additional notes or comments..."></textarea>
+                                <textarea name="notes" id="" placeholder="Add any additional notes or comments..."></textarea>
                             </label>
+                           
                         </div>
                         <div id="review_form" class="form_box " form_box = 3>
                             <h2>Review Information</h2>
+                            <label><span>Client First Name</span> <input id="first_name" value="" readonly  type="text" >
+                            </label>
+                            <label><span>Client Last Name</span> <input id="last_name" value="" readonly type="text" >
+                            </label>
+                            <label><span>Email</span> <input id="email"  readonly>
+                            <p class="alert">This is required.</p>
+                            </label>
+                            <label ><span>Phone Number</span> <input id="phone_number" value="" readonly type="tel"  >
+                            </label>
+                            <label >
+                                <span>Service Type</span>
+                                <input type="text" id="service_type" readonly>
+                            </label>
+                            <label >
+                                <span>Select Plan</span>
+                                <input type="text" id="plan" value="" readonly>
+                            </label>
+                            <label >
+                                <span>Start Date</span>
+                                <input type="date" id="start_date"  readonly>
+                            </label>
+                            <label >
+                                <span>Notes</span>
+                                <textarea id="notes" value="ddd" placeholder="Add any additional notes or comments..." readonly></textarea>
+                            </label>
                             <div class="btn_control">
-                                <button><i class="fa-regular fa-floppy-disk" style="color: rgb(255, 255, 255);"></i> Save Client</button>   
-                                <button>Cancel</button>
+                                <button  type="submit"><i class="fa-regular fa-floppy-disk" style="color: rgb(255, 255, 255);"></i> Save Client</button>   
+                                <button type="button">Cancel</button>
                             </div>
+                            
                         </div>     
-                        <div id="nav_form" >
-                            <button class="next" type="button" onclick="next(this)">Next</button>
-                            <button class="prev" type="button" onclick="next(this)" disabled>Back</button>
-                        </div>                   
+                                         
                     </form>
-                    
+                    <div id="control_form">
+                         <button class="prev get_form" type="button"  disabled>Back</button>
+                        <button class="next get_form" type="button" >Next</button>
+                    </div>
                 </section>
             </main>
         </div>
@@ -112,7 +155,7 @@
    
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script type="module" src="./admins.js"></script>
-    <script src="./addclients.js"></script>
+    <script  type="module" src="./admins.js"></script>
+    <script type="module" src="./addclients.js"></script>
 </body>
 </html>
