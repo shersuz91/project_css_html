@@ -1,72 +1,55 @@
 var form_box  = document.getElementsByClassName("form_box ")
 var active_box  = document.getElementsByClassName("active_box")
+var active_span = document.getElementsByClassName("active_span") 
 var form_bar = document.querySelectorAll(".form_bar > span")
 function next(e){
+     // set the first position of the form
+        // when it start should be in the first section
+        pose =  Number(active_box[0].getAttribute("form_box"))
+    // check if the pressed button is Next
     if (e.textContent=="Next"){
-        var oldEl= active_box[0].getAttribute("form_box")
+        pose +=1
+        // In this section I remove the active class from the span bar and from the current form box
+        // **************************
+        // for the current span that has active give it unactive class
+        // to make the ::after class goes forward(look at css style)
+        active_span[0].classList.add("unactive_span")
+        // in the same time add active_box class to the next box_form(look at active_box in css)
         active_box[0].nextElementSibling.classList.add("active_box")
-        for (let i = 0; i<active_box.length; i++){
-            if(active_box[i].getAttribute("form_box")==oldEl){
-                active_box[i].classList.remove("active_box")
-            }
-        }
-        var box_num = active_box[0].getAttribute("form_box")
-form_bar[box_num].classList.add("active_span")
-    for (i = 0; i<form_bar.length; i++ ){
-        if(form_bar[i].getAttribute("form_bar") !=box_num ){
-            if (form_bar[i].classList.contains("active_span")){
-                form_bar[i].classList.add("unactive_span")
-            }
-            form_bar[i].classList.remove("active_span")
-        }
+        // here get the first active_span(current active span) and give the next element active_span
+        active_span[0].nextElementSibling.classList.add("active_span")
+        active_box[0].style.transform= "translateX(-"+pose*100+"%)"
+        // Here we remove the active_box and active_span from the current elements
+        active_box[0].classList.remove("active_box")
+        active_span[0].classList.remove("active_span")
+        active_box[0].style.transform= "translateX(-"+pose*100+"%)"
     }
-    }
+    // check if the pressed button is Back
     else if(e.textContent == "Back"){
-        var oldEl= active_box[0].getAttribute("form_box")
-        active_box[0].previousElementSibling.classList.add("active_box")
-        for (let i = 0; i<active_box.length; i++){
-            if(active_box[i].getAttribute("form_box")==oldEl){
-                active_box[i].classList.remove("active_box")
-            }
-        }
-         var box_num = active_box[0].getAttribute("form_box")
-         console.log(box_num)
-form_bar[box_num].classList.add("active_span")
-    for (i = 0; i<form_bar.length; i++ ){
-        if(form_bar[i].getAttribute("form_bar") !=box_num ){
-            if (form_bar[i].classList.contains("active_span")){
-                // form_bar[i].classList.add("unactive_span")
-            }
-            form_bar[i].classList.remove("active_span")
-        }
+        pose -=1
+        // We do the sam thing for the back direction but we don't add unactive span class(look at the unctive_span class in css)
+        Array.from(active_box).at(-1).previousElementSibling.classList.add("active_box")
+        Array.from(active_box).at(-1).style.transform= "translateX(-"+pose*100+"%)"
+         Array.from(active_span).at(-1).previousElementSibling.classList.add("active_span")
+         Array.from(active_span).at(-1).previousElementSibling.classList.remove("unactive_span")
+        Array.from(active_box).at(-1).classList.remove("active_box")
+        Array.from(active_span).at(-1).classList.remove("active_span")
+        active_box[0].style.transform= "translateX(-"+pose*100+"%)"
     }
-    }
-        if (!form_box[0].classList.contains("active_box")){
-            document.getElementsByClassName("prev")[0].removeAttribute("disabled")
+   
+    // Here I control the next and back button
+    // First I remove the disabled atter from both
+        document.getElementsByClassName("prev")[0].removeAttribute("disabled")
+        document.getElementsByClassName("next")[0].removeAttribute("disabled")
+        // Second I check where is the active class
+        if (form_box[0].classList.contains("active_box")){
+            // if it is in the first form box so there is no need for go back
+            document.getElementsByClassName("prev")[0].setAttribute("disabled", "true")
         }
-        else{
-             document.getElementsByClassName("prev")[0].setAttribute("disabled", "true")
-        }
-        console.log(form_box)
-        if (!Array.from(form_box).at(-1).classList.contains("active_box")){
-            document.getElementsByClassName("next")[0].removeAttribute("disabled")
-        }
-        else{
-             document.getElementsByClassName("next")[0].setAttribute("disabled", "true")
+        else if (Array.from(form_box).at(-1).classList.contains("active_box")){
+            // if it is in the last form box so no need to go next
+            document.getElementsByClassName("next")[0].setAttribute("disabled", "true")
         }
     
-    // var active_box  = document.getElementsByClassName("active_box")
-    var box_num = active_box[0].getAttribute("form_box")
-    for (let i = 0; i<form_box.length; i++){
-        form_box[i].style.transform= "translateX(-"+box_num*100+"%)"
-    }
-// form_bar[box_num].classList.add("active_span")
-//     for (i = 0; i<form_bar.length; i++ ){
-//         if(form_bar[i].getAttribute("form_bar") !=box_num ){
-//             if (form_bar[i].classList.contains("active_span")){
-//                 form_bar[i].classList.add("unactive_span")
-//             }
-//             form_bar[i].classList.remove("active_span")
-//         }
-//     }
 }
+
