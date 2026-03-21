@@ -2,6 +2,8 @@
 import { our_clients } from "../module.js";
 
 let body_table = document.getElementsByClassName("body_table")[0]
+let admin_name = document.getElementById("name_admin")
+admin_name.textContent = localStorage.getItem("_name_admin")
 for (let i = 0; i < our_clients.length; i++){
     let status = null
     if (our_clients[i].status == true) {

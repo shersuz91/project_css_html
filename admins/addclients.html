@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="admins.css">
+    <link rel="stylesheet" href="addclients.css">
 </head>
 <body>
     <div >
@@ -19,7 +20,7 @@
                         <label for="search" class="w-auto row justify-content-center align-items-center p-0 m-0 border border-secondary-subtle border-end-0  rounded-start-3 rounded-end-0 "><i class="fa-solid fa-magnifying-glass"></i></label><input id="search" class="col-4 border border-secondary-subtle border-start-0 rounded-end-3 rounded-start-0 " type="search">
                     </div>
                     <div class="row col-2 justify-content-around">
-                        <div class="name_account col-5 m-0 p-0">Dave Doe <br><span>Admin</span></div>
+                        <div class="name_account col-5 m-0 p-0"><span id="name_admin"></span><span>Admin</span></div>
                         <img src="../images/profile1.png" class="flex_topimg m-0 p-0" alt="profile">
                     </div>
                 </div>
@@ -28,22 +29,79 @@
         <div class="row">
             <aside  class="col-2 border-end border-light-subtle position-fixed">
                 <ul class="px-0">
-                    <li class="px-2 my-4"><a href="./dashboard.html"  class="text-secondary p-2 row rounded-2"><i class="fa-solid fa-chart-line text-primary col-auto"></i>Dashboard</a></li>
-                    <li class="px-2 my-4"><a href="./clients.html" class="text-secondary p-2 row rounded-2"><i class="fa-solid fa-user-group text-secondary col-auto"></i>clients</a></li>
-                    <li class="px-2 my-4"><a href="./addclients.html" class="active text-primary p-2 row rounded-2"><i class="fa-solid fa-user-plus text-secondary col-auto"></i>Add client</a></li>
-                    <li class="px-2 my-4"><a href="#" class="text-secondary p-2 row rounded-2"><i class="fa-solid fa-money-check text-secondary col-auto"></i>Plans</a></li>
-                    <li class="px-2 my-4"><a href="#" class="text-secondary p-2 row rounded-2"><i class="fa-solid fa-gear text-secondary col-auto"></i>Settings</a></li>
+                    <li class="px-2 my-4"><a href="./dashboard.html"  class="text-white p-2 row rounded-2"><i class="fa-solid fa-chart-line text-white col-auto"></i>Dashboard</a></li>
+                    <li class="px-2 my-4"><a href="./clients.html" class=" p-2 row rounded-2"><i class="fa-solid fa-user-group  col-auto"></i>clients</a></li>
+                    <li class="px-2 my-4"><a href="./addclients.html" class="active text-white p-2 row rounded-2"><i class=" text-white fa-solid fa-user-plus  col-auto"></i>Add client</a></li>
+                    <li class="px-2 my-4"><a href="./plans.html" class=" p-2 row rounded-2"><i class="fa-solid fa-money-check  col-auto"></i>Plans</a></li>
+                    <li class="px-2 my-4"><a href="./settings.html" class=" p-2 row rounded-2"><i class="fa-solid fa-gear  col-auto"></i>Settings</a></li>
                 </ul>
             </aside>
             <main  class="col-10">
                  <section class="title">
                 <div>
                     <h1>Add New Client</h1>
-                    <p class="describe">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, dignissimos.</p>
+                    <p class="describe">Fill out the form below to add a new client</p>
                 </div>
             </section>
                 <section>
-                    <!-- add here the rest and create another sections bellow -->
+                    <div class="form_bar">
+                        <span class="active_span" form_bar=0><span>Client Information</span></span>
+                        <span  form_bar=1><span>Plan Information</span></span>
+                        <span  form_bar=2><span>Notes</span></span>
+                        <span  form_bar=3><span>Review</span></span>
+                    </div>
+                    <form action="" class="d-grid">
+                        <div id="client_info" class="form_box active_box" form_box = 0>
+                            <h2>Client Information</h2>
+                            <label><span>Client Name</span> <input type="text" required></label>
+                            <label ><span>Phone Number</span> <input type="tel" required></label>
+                            <label >
+                                <span>Service Type</span>
+                                <select name="" id="" required>
+                                    <option value="">Select Service</option>
+                                    <option value="">Gym</option>
+                                    <option value="">Teakwando</option>
+                                    <option value="">Music Class</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div id="select_plan" class="form_box " form_box = 1>
+                            <h2>Plan Information</h2>
+                            <label >
+                                <span>Select Plan</span>
+                                <select name="" id="" required>
+                                    <option value="">Select Plan</option>
+                                    <option value="">Starter</option>
+                                    <option value="">Professional</option>
+                                    <option value="">Business</option>
+                                    <option value="">Enterprise</option>
+                                </select>
+                            </label>
+                            <label >
+                                <span>Start Date</span>
+                                <input type="date" name="" id="" required>
+                            </label>
+                        </div>
+                        <div id="notes" class="form_box " form_box = 2>
+                            <h2>Extra Information</h2>
+                            <label >
+                                <span>Notes</span>
+                                <textarea name="" id="" placeholder="Add any additional notes or comments..."></textarea>
+                            </label>
+                        </div>
+                        <div id="review_form" class="form_box " form_box = 3>
+                            <h2>Review Information</h2>
+                            <div class="btn_control">
+                                <button><i class="fa-regular fa-floppy-disk" style="color: rgb(255, 255, 255);"></i> Save Client</button>   
+                                <button>Cancel</button>
+                            </div>
+                        </div>     
+                        <div id="nav_form" >
+                            <button class="next" type="button" onclick="next(this)">Next</button>
+                            <button class="prev" type="button" onclick="next(this)" disabled>Back</button>
+                        </div>                   
+                    </form>
+                    
                 </section>
             </main>
         </div>
@@ -53,5 +111,6 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script type="module" src="./admins.js"></script>
+    <script src="./addclients.js"></script>
 </body>
 </html>

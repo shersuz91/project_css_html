@@ -1,11 +1,13 @@
 let admins = [
     {   "id":1,
-        "name":"Sherman@gmail.com",
-        "pass":"1234"
+        "email":"Sherman@gmail.com",
+        "pass":"1234",
+        "name":"sherman"
     },
     {   "id":2,
-        "name":"chris@gmail.com",
-        "pass":"1234"
+        "email":"christine@gmail.com",
+        "pass":"1234",
+        "name":"christine"
     }
 ]
 

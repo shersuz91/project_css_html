@@ -1,0 +1,147 @@
+.form_bar{
+    display: flex;
+    gap: 30px;
+    margin: 0 0 10px 0;
+    justify-content: center;
+}
+.form_bar > span {
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    
+}
+
+.form_bar span::after{
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100%;
+    background-color: var(--success_hover);
+    z-index: -1;
+    transition: .4s;
+}
+.form_bar span.active_span::after{
+right: 0;
+}
+.form_bar span.unactive_span::after{
+    right:0;
+left: 100%;
+}
+.form_bar > span.active_span > span{
+    position: relative;
+    z-index: 3;
+    color: white;
+}
+form{
+    border-radius: 10px;
+    padding: 0px;
+    /* background-color: white; */
+    display: grid;
+    gap: 0px;
+    max-width: 700px;
+    grid-template-columns: repeat(4, 100%);
+    overflow: hidden;
+  
+    position: relative;
+    padding-bottom: 70px;
+    margin: auto;
+}
+form.d-grid>div {
+    padding: 10px;
+    position: relative;
+    left: 0;
+    background: white;
+    border-radius: 10px;
+      transition: opacity .7s , transform 1s;
+    opacity: 0;
+    background: #d0d0d0;
+}
+form.d-grid>div.active_box{
+    opacity: 1;
+}
+form label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+form label input, form label select, form label textarea{
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: 1px solid #3333333a;
+    outline:none;
+    box-shadow: 1px 1px 3px #333, -2px -2px 5px 0px white, inset 0px 0px 3px #ffffff;
+    background: linear-gradient(-130deg, #fefefe, #d5d5d5);
+    transition: .4s;
+    
+}
+form label input:hover, form label select:hover, form label textarea:hover{
+    background-color: white;
+    transform: translate(-2px, -2px);
+}
+
+textarea{
+    min-height: 100px;
+}
+.btn_control button:first-child{
+padding: 5px 10px;
+background-color: var(--success);
+color: white;
+border: none;
+border-radius: 7px;
+transition: .4s;
+}
+.btn_control button:first-child:hover{
+    background-color: var(--success_hover);
+}
+.btn_control button:last-child{
+    padding: 5px 10px;
+    background-color: var(--second_color);
+    border: none;
+    border-radius: 7px;
+    margin: 0 0 0 5px;
+    transition: .4s;
+}
+.btn_control button:last-child:hover{
+    background-color: var(--fourth_color);
+    color: white;
+}
+form label:has(:required) span::after{
+    content: "*";
+    color: var(--lred);
+    margin-left: 3px;
+}
+#nav_form{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    opacity: 1;
+}
+#nav_form button{
+padding: 5px 20px;
+border: none;
+outline: none;
+border-radius: 10px;
+transition: .3s;
+}
+.next{
+    background-color: var(--fourth_color);
+}
+.next:hover{
+    background-color: var(--third_color);
+    color: white;
+}
+.prev:hover{
+    background-color: var(--sixeth);
+}
+.next:disabled:hover{
+    background-color: var(--fourth_color);
+}
+.next:disabled, .prev:disabled{
+    cursor: not-allowed;
+}

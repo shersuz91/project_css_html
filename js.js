@@ -12,11 +12,12 @@ submit.addEventListener("click", function(e){
             "pass": _pass
         }
         for (let i = 0; i < admins.length; i++){
-            if (admins[i].name.toLowerCase() == _email.toLowerCase() && admins[i].pass == _pass){
+            if (admins[i].email.toLowerCase() == _email.toLowerCase() && admins[i].pass == _pass){
                 
-                localStorage.setItem("_email", admins[i].name)
+                localStorage.setItem("_email", admins[i].email)
                 localStorage.setItem("_password", admins[i].pass)
                 localStorage.setItem("_id", admins[i].id)
+                localStorage.setItem("_name_admin", admins[i].name)
                 document.location.href="./check_account/check_account.html?id="+admins[i].id
             }
             else if (i == admins.length -1){

@@ -5,9 +5,15 @@
 }
 :root{
     --first_color:#f7f7f7;
-    --scond_color: #eeeeee; 
+    --second_color: #eeeeee; 
     --third_color: #393e46; 
     --fourth_color: #929aab; 
+    --fifth:#4a5565;
+    --sixeth:rgb(170, 170, 170);
+    --lgreen:rgb(129, 255, 129);
+    --lred:rgb(250, 121, 121);
+    --success:rgb(1, 172, 1);
+    --success_hover:rgb(1, 132, 10);
 }
 
 body{
@@ -30,7 +36,7 @@ header {
     color: rgba(0, 0, 0, 0.551);
     font-weight: 100;
     color: white;
-    /* background-color: var(--fourth_color); */
+    background-color: var(--third_color);
 }
 .search_box input{
     padding: 5px;
@@ -39,10 +45,19 @@ header {
     background-color: var(--fourth_color);
     color: white;
 }
+.name_account{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+span#name_admin {
+    align-self: start;
+}
 .name_account span{
     font-size: .8em;
     text-align: right;
     display: block;
+    align-self: end;
 }
 .flex_topimg {
     width: 40px;
@@ -51,8 +66,9 @@ header {
 }
 aside{
     top:70px;
+    height: 100vh;
     background-color: var(--third_color);
-    
+    background: linear-gradient(to left, white,var(--fifth));
 }
 
 
@@ -68,36 +84,37 @@ aside li {
 }
 aside li a{
     text-decoration: none;
-    /* color: #4a5565; */
     color: white;
     display: block;
     padding: 15px ;
-    transition: .3s;
+    transition: .7s;
     display: flex;
     align-items: center;
     gap: 10px;
-    background: linear-gradient(to right, white,#4a5565);
+    background-image: linear-gradient(to right, var(--sixeth) 25%,var(--fifth) 50%,   var(--sixeth) );
+background-size: 200%;
+background-position: left;
+
 }
 aside li a.active{
-    background-color: #eef2ff;
-    color: #4f39f6;
+    background-image: linear-gradient(to right, var(--third_color)  );
 }
 aside li a:hover:not(.active){
-    background-color: #eef2ff95;
-    color: #4a5565;
+    background-position: right;
+    translate:2px -2px;
+    box-shadow: 1px 1px 3px 0px var(--third_color);
+}
+ aside li a:hover i{
+    color: white;
 }
 aside li a i
 {
-     color: #4a5565;
-     
-     
-}
-aside li a.active i{
-    color: #4f39f6;
+    transition: .3s;
+     color: var(--fifth);
 }
 main{
     padding: 35px 20px;
-    background-color: #F9FAFB;
+    background-color: var(--first_color);
     position: relative;
     right: 0;
     left: 100%;
@@ -120,5 +137,5 @@ section.title {
     text-decoration: none;
 }
 .describe{
-    color: #6a7282;
+    color: var( --sixeth);
 }

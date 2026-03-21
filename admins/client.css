@@ -1,4 +1,15 @@
-
+.add_client{
+    background-color: var(--success);
+    color: white;
+    transition: .4s;
+}
+.add_client:hover{
+background-color: var(--success_hover)    ;
+border: 1px solid green;
+box-shadow: 1px 1px 5px 0px #333;
+translate: -4px -1px;
+color: white;
+}
 .filter_box {
     display: flex;
     gap: 10px;
@@ -67,10 +78,10 @@ td:nth-child(6) span:before {
     border-radius: 10px;
 }
 .active_st::before{
-    background: rgb(129, 255, 129);
+    background: var(--lgreen);
 }
 .un_active_st::before{
-    background: rgb(250, 121, 121);
+    background: var(--lred);
 }
 
 
@@ -81,10 +92,10 @@ td .action a {
     border-radius: 5px;
 }
 td .action a:first-of-type, td .action a:visited:first-of-type{
-color: green;
+color: rgb(1, 172, 1);
 }
 td .action a:last-of-type, td .action a:visited:last-of-type{
-color: red;
+color: rgb(172, 1, 1);
 }
 td .action a:hover{
     background-color: rgba(211, 211, 211, 0.529);
