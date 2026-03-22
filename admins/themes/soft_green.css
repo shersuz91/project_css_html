@@ -1,0 +1,20 @@
+
+:root{
+    --first_color:#e6f7f4;        
+    --second_color:#ffffff;       
+
+    --third_color:#2f7f89;        
+    --fourth_color:#3A8B95;       
+
+    --fifth:#66D0BC;              
+    --sixeth:#33858f;             
+
+    --lgreen:#d1fae5;             
+    --lred:#ffe4ec;               
+
+    --success:#3A8B95;            
+    --success_hover:#2f7f89;
+
+    --active:#FF3E9B;           
+    --disable:#b0b0b0;           
+}

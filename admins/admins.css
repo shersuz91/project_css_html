@@ -72,7 +72,7 @@ aside li {
 }
 aside li a{
     text-decoration: none;
-    color: white;
+    color: var(--second_color);
     display: block;
     padding: 15px ;
     transition: .7s;
@@ -86,6 +86,7 @@ background-position: left;
 }
 aside li a.active{
     background-image: linear-gradient(to right, var(--third_color)  );
+    color: var(--first_color);
 }
 aside li a:hover:not(.active){
     background-position: right;
@@ -93,12 +94,15 @@ aside li a:hover:not(.active){
     box-shadow: 1px 1px 3px 0px var(--third_color);
 }
  aside li a:hover i{
-    color: white;
+    color: var(--first_color);
 }
 aside li a i
 {
     transition: .3s;
-     color: var(--fifth);
+     color: var(--second_color);
+}
+aside li a.active i{
+color: var(--first_color);
 }
 main{
     padding: 35px 20px;
@@ -114,6 +118,7 @@ section.title {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: var(--third_color);
 }
 
 .title > div > a {
@@ -125,5 +130,5 @@ section.title {
     text-decoration: none;
 }
 .describe{
-    color: var( --sixeth);
+    color: var( --third_color);
 }

@@ -1,5 +1,9 @@
+
+form{
+    color: var(--third_color);
+}
 .group_input {
-    background: white;
+    background: var(--second_color);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -87,7 +91,7 @@ input[type="checkbox"] {
     content: "";
     width: 45px;
     display: block;
-    background: var(--fourth_color);
+    background: var(--disable);
     border-radius: 100px;
     height: 25px;
     position: relative;
@@ -110,7 +114,7 @@ input[type="checkbox"] {
     transition: .4s;
 }
 .noti_btn:has(input:checked)::before{
-    background-color: var(--success);
+    background-color: var(--active);
 }
 .noti_btn:has(input:checked)::after{
     left: calc(45px - 24px);

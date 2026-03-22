@@ -3,13 +3,15 @@ let admins = [
         "email":"Sherman@gmail.com",
         "pass":"1234",
         "name":"sherman",
-        "last_name":"sher"
+        "last_name":"sher",
+        "phone":"+5123456"
     },
     {   "id":2,
         "email":"christine@gmail.com",
         "pass":"1234",
         "name":"christine christ",
-        "last_name":"christ"
+        "last_name":"christ",
+        "phone":"+5123456"
     }
 ]
 

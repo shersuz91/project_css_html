@@ -1,10 +1,10 @@
 :root{
     --first_color:#fff7ed;        
-    --second_color:#ffedd5;      
+    --second_color:#bfbfbf;      
     --third_color:#7c2d12;      
     --fourth_color:#c2410c;       
     --fifth:#ea580c;              
-    --sixeth:#fed7aa;            
+    --sixeth:#977d60;            
     --lgreen:#bbf7d0;             
     --lred:#fecaca;               
     --success:#ea580c;
@@ -13,4 +13,7 @@
     --secondary:#fb7185;         
     --accent:#eab308;            
     --danger:#dc2626;
+    --active:#c2410c;
+    --disable:#6c757d;
 }
+/*  */
