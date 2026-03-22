@@ -2,12 +2,14 @@ let admins = [
     {   "id":1,
         "email":"Sherman@gmail.com",
         "pass":"1234",
-        "name":"sherman"
+        "name":"sherman",
+        "last_name":"sher"
     },
     {   "id":2,
         "email":"christine@gmail.com",
         "pass":"1234",
-        "name":"christine"
+        "name":"christine christ",
+        "last_name":"christ"
     }
 ]
 

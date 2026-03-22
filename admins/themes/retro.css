@@ -1,0 +1,16 @@
+:root{
+    --first_color:#fff7ed;        
+    --second_color:#ffedd5;      
+    --third_color:#7c2d12;      
+    --fourth_color:#c2410c;       
+    --fifth:#ea580c;              
+    --sixeth:#fed7aa;            
+    --lgreen:#bbf7d0;             
+    --lred:#fecaca;               
+    --success:#ea580c;
+    --success_hover:#c2410c;
+    --primary:#f97316;           
+    --secondary:#fb7185;         
+    --accent:#eab308;            
+    --danger:#dc2626;
+}

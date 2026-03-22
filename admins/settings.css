@@ -17,11 +17,14 @@
 }
 .info{
     display: grid;
-    grid-template-areas: "name email""phone phone";
+    grid-template-areas: "name l_name""email phone";
     gap: 10px;
 }
-label[for="full_name"]{
+label[for="f_name"]{
     grid-area: name;
+}
+label[for="l_name"]{
+    grid-area: l_name;
 }
 label[for="email"]{
     grid-area: email;

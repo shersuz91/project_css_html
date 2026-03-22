@@ -6,6 +6,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet"  id="theme_color"  href="./themes/regular.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="admins.css">
     <link rel="stylesheet" href="addclients.css">
@@ -110,7 +111,8 @@
                         </div>
                         <div id="review_form" class="form_box " form_box = 3>
                             <h2>Review Information</h2>
-                            <label><span>Client First Name</span> <input id="first_name" value="" readonly  type="text" >
+                            <div class="box_review">
+                                <label><span>Client First Name</span> <input id="first_name" value="" readonly  type="text" >
                             </label>
                             <label><span>Client Last Name</span> <input id="last_name" value="" readonly type="text" >
                             </label>
@@ -135,9 +137,11 @@
                                 <span>Notes</span>
                                 <textarea id="notes" value="ddd" placeholder="Add any additional notes or comments..." readonly></textarea>
                             </label>
+                            </div>
+                            
                             <div class="btn_control">
                                 <button  type="submit"><i class="fa-regular fa-floppy-disk" style="color: rgb(255, 255, 255);"></i> Save Client</button>   
-                                <button type="button">Cancel</button>
+                                <a href="./addclients.html" type="button">Cancel</a>
                             </div>
                             
                         </div>     

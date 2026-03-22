@@ -17,7 +17,7 @@ submit.addEventListener("click", function(e){
                 localStorage.setItem("_email", admins[i].email)
                 localStorage.setItem("_password", admins[i].pass)
                 localStorage.setItem("_id", admins[i].id)
-                localStorage.setItem("_name_admin", admins[i].name)
+                localStorage.setItem("_name_admin", JSON.stringify(admins[i]))
                 if (localStorage.getItem("clients_data") == null){
                     localStorage.setItem("clients_data", JSON.stringify(our_clients))
                 }

@@ -16,6 +16,8 @@ overflow: hidden;
     color: var(--third_color);
 }
 .form_bar > span {
+    width: 148px;
+    text-align: center;
     padding: 5px;
     border: 1px solid;
     border-radius: 10px;
@@ -117,15 +119,18 @@ transition: .4s;
 .btn_control button:first-child:hover{
     background-color: var(--success_hover);
 }
-.btn_control button:last-child{
+.btn_control a:last-child{
+    color: white;
+    text-decoration: none;
     padding: 5px 10px;
     background-color: var(--second_color);
     border: none;
     border-radius: 7px;
     margin: 0 0 0 5px;
     transition: .4s;
+    background-color: var(--third_color);
 }
-.btn_control button:last-child:hover{
+.btn_control a:last-child:hover{
     background-color: var(--fourth_color);
     color: white;
 }
@@ -135,6 +140,12 @@ form label:has(:required) span::after{
     margin-left: 3px;
 }
 
+.box_review{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
 #control_form{
     position: fixed;
     top: calc(500px);
