@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="admins.css">
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="settings.css">
 </head>
 <body>
     <div >
@@ -45,7 +45,71 @@
                     </div>
                 </section>
                 <section>
-                    <!-- add here the rest and create another sections bellow -->
+                    <form action="">
+                        <div class="group_input">
+                            <h5><i class="fa-solid fa-user" style="color: rgb(131, 192, 251);"></i> Profile Settings</h5>
+                            <div class="inputs info">
+                                <label for="full_name">
+                                    <span>Full Name</span>
+                                    <input name="full_name" id="full_name" type="text">
+                                </label>
+                                <label for="email">
+                                    <span>Email</span>
+                                    <input name="email" id="email" type="email">
+                                </label>
+                                <label for="phone">
+                                    <span>Phone</span>
+                                    <input name="phone" id="phone" type="tel">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="group_input">
+                            <h5><i class="fa-regular fa-bell" style="color: rgb(131, 192, 251);"></i> Notification Settings</h5>
+                            <div class="inputs ">
+                                <div class="noti_box">
+                                    <div class="noti_p">
+                                        <p>Email Notifications</p>
+                                        <span>Receive email updates about subscriptions</span>
+                                    </div>
+                                    <div class="noti_btn">
+                                        <input  type="checkbox">
+                                    </div>
+                                </div>
+                                <div class="noti_box">
+                                    <div class="noti_p">
+                                        <p>Expiration Reminders</p>
+                                        <span>Get notified when subscriptions are about to expire</span>
+                                    </div>
+                                    <div class="noti_btn">
+                                        <input  type="checkbox">
+                                    </div>
+                                </div>
+                                <div class="noti_box">
+                                    <div class="noti_p">
+                                        <p>New Client Alerts</p>
+                                        <span>Get notified when new clients are added</span>
+                                    </div>
+                                    <div class="noti_btn">
+                                        <input  type="checkbox">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="group_input">
+                            <h5><i class="fa-solid fa-palette" style="color: rgb(131, 192, 251);"></i> Appearance</h5>
+                            <div class="inputs ">
+                                <select name="" id="">
+                                    <option value="">Regular</option>
+                                    <option value="">Dark</option>
+                                    <option value="">soft</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="btn_control">
+                            <button type="button">Cancel</button>
+                            <button type="submit">Save Changes</button>
+                        </div>
+                    </form>
                 </section>
 
             </main>

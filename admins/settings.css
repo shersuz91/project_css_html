@@ -1,0 +1,138 @@
+.group_input {
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 80%;
+    margin: 20px 0;
+    box-shadow: 0 0 4px #333;
+}
+.group_input > * {
+    padding: 20px;
+}
+
+.group_input h5 {
+    border-bottom: 1px solid #3333332e;
+}
+.info{
+    display: grid;
+    grid-template-areas: "name email""phone phone";
+    gap: 10px;
+}
+label[for="full_name"]{
+    grid-area: name;
+}
+label[for="email"]{
+    grid-area: email;
+}
+label[for="phone"]{
+    grid-area: phone;
+}
+.info  input {
+    width: 100%;
+    border: 1px solid #33333373;
+    padding: 7px;
+    border-radius: 10px;
+    outline: none;
+}
+.group_input input:focus{
+    outline: 1px solid rgba(133, 231, 255, 0.952);;
+}
+.noti_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 20px;
+}
+.noti_p p {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+}
+.noti_p span {
+    font-weight: lighter;
+    display: block;
+    font-size: 13px;
+    color: gray;
+}
+
+.noti_btn::before{
+    content: "";
+}
+
+.noti_btn::after{
+    content: "";
+}
+
+.noti_btn {
+    position: relative;
+    
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+.noti_btn::before {
+    content: "";
+    width: 45px;
+    display: block;
+    background: var(--fourth_color);
+    border-radius: 100px;
+    height: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.noti_btn::after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    display: block;
+    background: white;
+    position: absolute;
+    z-index: 2;
+    border-radius: 100px;
+    left: 2px;
+    right: 0;
+    top: 50%;
+    transform: translatey(-50%);
+    transition: .4s;
+}
+.noti_btn:has(input:checked)::before{
+    background-color: var(--success);
+}
+.noti_btn:has(input:checked)::after{
+    left: calc(45px - 24px);
+}
+
+.inputs select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px #333333a1;
+    outline: none;
+}
+.btn_control button{
+    padding: 10px ;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    transition: .4s;
+}
+.btn_control button:hover{
+    box-shadow: 0px 0px 3px #333;
+}
+.btn_control button:first-child{
+    background-color: var(--fourth_color);
+}
+.btn_control button:last-child{
+    background-color: var(--success);
+}
