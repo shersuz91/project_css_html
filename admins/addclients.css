@@ -68,7 +68,7 @@ form{
     grid-template-columns: repeat(4, 100%);
     align-items: start;
     position: relative;
-    padding-bottom: 70px;
+    padding-bottom: 200px;
     margin: auto;
 }
 form.d-grid>div {

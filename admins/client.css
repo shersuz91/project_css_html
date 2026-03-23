@@ -100,3 +100,10 @@ color: rgb(172, 1, 1);
 td .action a:hover{
     background-color: rgba(211, 211, 211, 0.529);
 }
+
+.display_service{
+    display: none;
+}
+.display_status{
+    display: none;
+}

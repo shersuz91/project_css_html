@@ -7,12 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" id="theme_color" href="">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="admins.css">
-    <link rel="stylesheet" href="client.css">
+    <link rel="stylesheet" href="./admins.css">
+    <link rel="stylesheet" href="./client.css">
 </head>
 <body>
-    <div >
+    <div>
         <header class=" sticky-top row justify-content-center align-items-center border-bottom border-light-subtle">
             <div id="logo" class="text-center border-end border-light-subtle col-2 h-100 row justify-content-center align-items-center m-0 p-0"><img class="w-auto" src="../images/logo6.png" alt="logo"></div>
             <div class=" col-10 h-100 row justify-content-center align-items-center m-0 p-0" >
@@ -55,15 +54,16 @@
                     </div>
                     <div class="select_filter">
                         <select name=""  id="service_select" >
-                            <option value="">All services</option>
-                            <option value="">Gym</option>
-                            <option value="">Teakwando</option>
-                            <option value="">Musice</option>
+                            <option value="all">All services</option>
+                            <option value="Gym">Gym</option>
+                            <option value="Taekwondo">Taekwondo</option>
+                            <option value="Music">Music</option>
                         </select>
                         <select name="" id="status_select">
-                            <option value="">All Status</option>
-                            <option value="">active</option>
-                            <option value="">Expired</option>
+                            <option value="all">All Status</option>
+                            <option value="Active">Active</option>
+                            <option value="Expired">Expired</option>
+                            <option value="Panding">Panding</option>
                         </select>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                                 <th>ACTIONS</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="body_table">
                             
                         </tbody>
                     </table>

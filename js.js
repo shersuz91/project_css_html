@@ -17,9 +17,9 @@ submit.addEventListener("click", function(e){
                 localStorage.setItem("_email", admins[i].email)
                 localStorage.setItem("_password", admins[i].pass)
                 localStorage.setItem("_id", admins[i].id)
-                // if (localStorage.getItem("admin_setting") == null){
+                if (localStorage.getItem("admin_setting") == null){
                     localStorage.setItem("admin_setting", JSON.stringify(admins[i]))
-                // }
+                }
                 if (localStorage.getItem("clients_data") == null){
                     localStorage.setItem("clients_data", JSON.stringify(our_clients))
                 }

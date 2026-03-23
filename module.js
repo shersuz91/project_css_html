@@ -33,7 +33,7 @@ let our_clients = [
         "name":"John",
         "last_name":"Doe",
         "email":"john@gmail.com",
-        "comapny":"Swimming",
+        "comapny":"Music",
         "plan":"starter",
         "start":"2025-1-1",
         "notes":""
@@ -54,7 +54,7 @@ let our_clients = [
         "name":"Michal",
         "last_name":"Smith",
         "email":"michal@gmail.com",
-        "comapny":"Tennis",
+        "comapny":"Taekwondo",
         "plan":"starter",
         "start":"2026-4-4",
         "notes":""
@@ -64,12 +64,66 @@ let our_clients = [
         "name":"Emy",
         "last_name":"Smith",
         "email":"emy@gmail.com",
-        "comapny":"Tekondo",
+        "comapny":"Taekwondo",
         "plan":"starter",
         "start":"2026-5-5",
         "notes":""
+    },
+    {
+        "id":6,
+        "name":"Ali",
+        "last_name":"Smith",
+        "email":"ali@gmail.com",
+        "comapny":"Taekwondo",
+        "plan":"starter",
+        "start":"2026-6-6",
+        "notes":""
+
+    },
+    {
+        "id":7,
+        "name":"Sara",
+        "last_name":"Smith",
+        "email":"sara@gmail.com",
+        "comapny":"Taekwondo",
+        "plan":"starter",
+        "start":"2026-7-7",
+        "notes":""
+
+    },
+    {
+        "id":8,
+        "name":"Sara",
+        "last_name":"Smith",
+        "email":"sara@gmail.com",
+        "comapny":"Gym",
+        "plan":"starter",
+        "start":"2026-8-8",
+        "notes":""
+
+    },
+    {
+        "id":9,
+        "name":"Michael",
+        "last_name":"Johnson",
+        "email":"michael@gmail.com",
+        "comapny":"Music",
+        "plan":"starter",
+        "start":"2026-9-9",
+        "notes":""
+    },
+    {
+        "id":10,
+        "name":"Emily",
+        "last_name":"Davis",
+        "email":"emily@gmail.com",
+        "comapny":"Music",
+        "plan":"starter",
+        "start":"2026-10-10",
+        "notes":""
+
     }
-    
+
 ]
 
 function add_client(data){

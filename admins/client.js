@@ -1,5 +1,9 @@
-let body_table = document.getElementsByClassName("body_table")[0]
+let body_table = document.getElementById("body_table")
 var our_clients = JSON.parse(localStorage.getItem("clients_data"))
+let service_select = document.getElementById("service_select")
+let status_select = document.getElementById("status_select")
+console.log(our_clients)
+
 for (let i = 0; i < our_clients.length; i++){
     let status = null
     var start_data = our_clients[i].start
@@ -43,14 +47,65 @@ for (let i = 0; i < our_clients.length; i++){
             <tr>
                 <td>${our_clients[i].id}</td>
                 <td>${our_clients[i].name}</td>
-                <td>${our_clients[i].comapny}</td>
+                <td class='service'>${our_clients[i].comapny}</td>
                 <td>${our_clients[i].plan}</td>
                 <td>${our_clients[i].start}</td>
                 <td>${end}</td>
-                <td>${status}</td>
+                <td class='status'>${status}</td>
                 <td>
                 <div class='action'>
                 <a href='./edit.html?id${our_clients[i].id}'><i class="fa-regular fa-pen-to-square"></i></a><a href='delete_file.html?id${our_clients[i].id}'><i class="fa-regular fa-trash-can"></i></a>
                 </div></td>
             </tr>`
 }
+function filterService(service_list,filter_value){
+    Array.from(service_list).forEach(el=>{
+    if (el.textContent != filter_value && filter_value!="all"){
+        
+        el.parentElement.classList.add("display_service")
+    }
+    else {
+        el.parentElement.classList.remove("display_service")
+    }
+})
+}
+service_select.addEventListener("change", function(e){
+var service = document.getElementsByClassName("service")
+filterService(service,e.target.value)
+})
+
+status_select.addEventListener("change", function(e){
+    console.log(service_select.value)
+    var status = document.getElementsByClassName("status")
+    Array.from(status).forEach(el=>{
+        
+        if(e.target.value == "Active"){
+            if(el.textContent =="🟢" && !el.classList.contains("display_service")){
+                el.parentElement.classList.remove("display_status")
+            }
+            else {
+                 el.parentElement.classList.add("display_status")
+            }
+        }
+        else if(e.target.value == "Expired"){
+            if(el.textContent =="🔴" && !el.classList.contains("display_service")){
+                el.parentElement.classList.remove("display_status")
+            }
+            else{
+                 el.parentElement.classList.add("display_status")
+            }
+        }
+        else if(e.target.value == "Panding" && !el.classList.contains("display_service")){
+            if(el.textContent !="🔴" && el.textContent !="🟢" && !el.classList.contains("display_service")){
+                el.parentElement.classList.remove("display_status")
+            }
+            else{
+                 el.parentElement.classList.add("display_status")
+            }
+        }
+        else{
+            el.parentElement.classList.remove("display_status")
+        }
+        
+    })
+})
