@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script type="module" src="./admins.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet"  id="theme_color"  href="">
@@ -11,17 +12,16 @@
     <link rel="stylesheet" href="admins.css">
     <link rel="stylesheet" href="dashboard.css">
 </head>
-<body>
-    <!-- Hello -->
+<body class="d-none">
     <div >
         <header class="sticky-top row justify-content-center align-items-center border-bottom border-light-subtle">
             <div id="logo" class="text-center border-end border-light-subtle col-2 h-100 row justify-content-center align-items-center m-0 p-0"><img class="w-auto" src="../images/logo6.png" alt="logo"></div>
-            <div class=" col-10 h-100 row justify-content-center align-items-center m-0 p-0" >
+            <div class=" col-10 h-100 row justify-content-center align-items-center m-0 p-0 px-2" >
                 <div class="row ">
-                    <div class="search_box row col-10 px-2">
+                    <div class="search_box row col-6 px-2">
                         <label for="search" class="w-auto row justify-content-center align-items-center p-0 m-0 border border-secondary-subtle border-end-0  rounded-start-3 rounded-end-0 "><i class="fa-solid fa-magnifying-glass"></i></label><input id="search" class="col-4 border border-secondary-subtle border-start-0 rounded-end-3 rounded-start-0 " type="search">
                     </div>
-                    <div class="row col-2 justify-content-around">
+                    <div class="row col-6 justify-content-end gap-2">
                         <div class="name_account col-5 m-0 p-0"><span id="name_admin"></span><span>Admin</span></div>
                         <img src="../images/profile1.png" class="flex_topimg m-0 p-0" alt="profile">
                     </div>
@@ -97,6 +97,6 @@
    
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script type="module" src="./admins.js"></script>
+    
 </body>
 </html>
