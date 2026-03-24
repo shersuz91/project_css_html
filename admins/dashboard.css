@@ -1,3 +1,7 @@
 section.flex_box {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 16px;
 }
