@@ -6,6 +6,7 @@ section.flex_box {
     padding: 10px 16px;
     background: var(--first_color);
     border-radius: 10px;
+    box-shadow: 1px 1px 3px #333;
 }
 .business_status {
     display: flex;
