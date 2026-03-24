@@ -9,8 +9,9 @@ window.onload=function(){
 window.addEventListener("load", function(){
     if (localStorage.getItem("admin_setting") != null){
         
-
-this.document.body.classList.remove("d-none")
+var bar_btn = document.getElementById("bar_btn")
+var aside = document.querySelector("aside")
+document.body.classList.remove("d-none")
 
 
 let admin_name = document.getElementById("name_admin")
@@ -33,5 +34,9 @@ else{
     }else{
  document.location.href="../index.html"
         }
+
+bar_btn.addEventListener("click", function(){
+    aside.classList.toggle("show")
+})
 
 })

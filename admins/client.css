@@ -40,19 +40,24 @@ select > option:hover, select > option:checked{
 }
 
 table {
+    
     border: 1px solid #33333352;
     width: 100%;
     border-collapse: collapse;
     padding: 10px;
     background: aliceblue;
+    text-align: center;
 }
+
+
 table tbody tr:hover{
 background-color: rgba(211, 211, 211, 0.375);
 }
 th, td {
     border-bottom: 1px solid #33333352;
-    padding: 10px;
-    text-align: left;
+    padding: 4px;
+    text-align: center;
+    border: 1px solid #33333350;
 }
 th{
     color: #6a7282;
@@ -90,6 +95,7 @@ td .action a {
     margin: 0 10px;
     padding: 5px;
     border-radius: 5px;
+    font-size: 18px;
 }
 td .action a:first-of-type, td .action a:visited:first-of-type{
 color: rgb(1, 172, 1);
@@ -107,3 +113,22 @@ td .action a:hover{
 .display_status{
     display: none;
 }
+
+
+@media (min-width: 576px) { 
+    body{
+        background-color: red;
+    }
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }

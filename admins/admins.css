@@ -19,6 +19,10 @@ header {
     color: white;
 }
 
+#bar_btn{
+    width: max-content;
+    background-color: transparent;
+}
 .search_box label{
     border-right: none;
     font-size: 20px;
@@ -58,8 +62,14 @@ aside{
     height: 100vh;
     background-color: var(--third_color);
     background: linear-gradient(to left, white,var(--fifth));
+    z-index: 9;
+    left: 100%;
+    transform: translateX(0);
+    transition: .4s;
 }
-
+aside.show{
+    transform: translateX(-100%);
+}
 
 #logo img {
     height: 50px;
@@ -109,9 +119,10 @@ main{
     padding: 35px 20px;
     background-color: var(--first_color);
     position: relative;
-    right: 0;
-    left: 100%;
-    transform: translate(-100%, 0px);
+    left: 0;
+    right: 100%;
+    /* left: 100%; */
+    transform: translate(0);
     height: calc(100vh - 70px);
     overflow: auto;
 }
@@ -133,3 +144,43 @@ section.title {
 .describe{
     color: var( --third_color);
 }
+
+
+
+@media (min-width: 576px) { 
+    body{
+        background-color: red;
+    }
+    
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+   
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    body{
+        background-color: green !important;
+    }
+    #bar_btn{
+        display: none;
+    }
+    aside{
+        left: 0;
+    }
+     main{
+        left: 100%;
+        transform: translate(-100%, 0px);
+
+    }
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }
