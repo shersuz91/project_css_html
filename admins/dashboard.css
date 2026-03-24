@@ -1,7 +1,15 @@
 section.flex_box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     padding: 10px 16px;
+    background: var(--first_color);
+    border-radius: 10px;
+}
+.business_status {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    background: var(--second_color);
 }
