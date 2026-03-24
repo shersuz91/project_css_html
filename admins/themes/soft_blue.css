@@ -1,19 +1,19 @@
 :root{
-    --first_color:#eef2ff;        
-    --second_color:#ffffff;       
+    --first_color:#f5f7ff;
+    --second_color:#ffffff;
 
-    --third_color:#0D1A63;        
-    --fourth_color:#1A2CA3;     
+    --third_color:#2a356f;
+    --fourth_color:#4a5bb5;
 
-    --fifth:#2845D6;              
-    --sixeth:#0f1d6e;            
+    --fifth:#5c6ff2;
+    --sixeth:#2f3d7a;
 
-    --lgreen:#d1fae5;             
-    --lred:#fee2e2;               
+    --lgreen:#dcfce7;
+    --lred:#ffe4e6;
 
-    --success:#1A2CA3;            
-    --success_hover:#0D1A63;
+    --success:#4a5bb5;
+    --success_hover:#2a356f;
 
-    --active:#F68048;             
-    --disable:#3f446067;           
+    --active:#f9a17a;
+    --disable:#6b728080;
 }

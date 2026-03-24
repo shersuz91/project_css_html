@@ -38,14 +38,14 @@
                 </ul>
             </aside>
             <main  class="col-10">
-                 <section class="title">
+                 <section id="top" class="title">
                 <div>
                     <h1>Add New Client</h1>
                     <p class="describe">Fill out the form below to add a new client</p>
                 </div>
             </section>
                 <section id="form_section">
-                    <div class="form_bar">
+                    <div class="form_bar" >
                         <span class="active_span" form_bar=0>
                             <span>Client Information</span>
                         </span>
@@ -54,7 +54,7 @@
                         <span  form_bar=3><span>Review</span></span>
                     </div>
                     
-                    <form action="" class="d-grid">
+                    <form action=""   class="d-grid">
                         <div id="client_info" class="form_box active_box" form_box = 0>
                             <h2>Client Information</h2>
                             <label><span>Client First Name</span> <input name="first_name" type="text" required>
@@ -79,7 +79,8 @@
                                 </select>
                                 <p class="alert">This is required.</p>
                             </label>
-                            
+                            <!-- <button class="prev get_form" type="button"  disabled>Back</button> -->
+                            <button class="next get_form" type="button" >Next</button>
                         </div>
                         <div id="select_plan" class="form_box " form_box = 1>
                             <h2>Plan Information</h2>
@@ -99,7 +100,8 @@
                                 <input type="date" name="start_date" id="" required>
                                 <p class="alert">This is required.</p>
                             </label>
-                            
+                            <button class="prev get_form" type="button"  >Back</button>
+                            <button class="next get_form" type="button" >Next</button>
                         </div>
                         <div  class="form_box " form_box = 2>
                             <h2>Extra Information</h2>
@@ -107,6 +109,8 @@
                                 <span>Notes</span>
                                 <textarea name="notes" id="" placeholder="Add any additional notes or comments..."></textarea>
                             </label>
+                            <button class="prev get_form" type="button"  >Back</button>
+                            <button class="next get_form" type="button" >Next</button>
                            
                         </div>
                         <div id="review_form" class="form_box " form_box = 3>
@@ -143,14 +147,15 @@
                                 <button  type="submit"><i class="fa-regular fa-floppy-disk" style="color: rgb(255, 255, 255);"></i> Save Client</button>   
                                 <a href="./addclients.html" type="button">Cancel</a>
                             </div>
-                            
+                            <button class="prev get_form" type="button"  >Back</button>
+                        <!-- <button class="next get_form" type="button" >Next</button> -->
                         </div>     
                                          
                     </form>
                     <div id="control_form">
-                         <button class="prev get_form" type="button"  disabled>Back</button>
-                        <button class="next get_form" type="button" >Next</button>
+                         
                     </div>
+
                 </section>
             </main>
         </div>

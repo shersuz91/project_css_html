@@ -14,6 +14,8 @@ Array.from(get_form).forEach(element=>{
      // set the first position of the form
         // when it start should be in the first section
         var pose =  Number(active_box[0].getAttribute("form_box"))
+
+
     // check if the pressed button is Next
     if (e.target.textContent=="Next"){
         var inputs = active_box[0].querySelectorAll("input, select")
@@ -38,11 +40,11 @@ Array.from(get_form).forEach(element=>{
         active_box[0].nextElementSibling.classList.add("active_box")
         // here get the first active_span(current active span) and give the next element active_span
         active_span[0].nextElementSibling.classList.add("active_span")
-        active_box[0].style.transform= "translateX(-"+pose*100+"%)"
+        active_box[0].style.left= "-100%"
         // Here we remove the active_box and active_span from the current elements
         active_box[0].classList.remove("active_box")
         active_span[0].classList.remove("active_span")
-        active_box[0].style.transform= "translateX(-"+pose*100+"%)"
+        active_box[0].style.left= "0%"
 
         
     }
@@ -51,12 +53,12 @@ Array.from(get_form).forEach(element=>{
         pose -=1
         // We do the sam thing for the back direction but we don't add unactive span class(look at the unctive_span class in css)
         Array.from(active_box).at(-1).previousElementSibling.classList.add("active_box")
-        Array.from(active_box).at(-1).style.transform= "translateX(-"+pose*100+"%)"
+        Array.from(active_box).at(-1).style.left= "100%"
          Array.from(active_span).at(-1).previousElementSibling.classList.add("active_span")
          Array.from(active_span).at(-1).previousElementSibling.classList.remove("unactive_span")
         Array.from(active_box).at(-1).classList.remove("active_box")
         Array.from(active_span).at(-1).classList.remove("active_span")
-        active_box[0].style.transform= "translateX(-"+pose*100+"%)"
+        active_box[0].style.left= "0%"
     }
    
     // Here I control the next and back button
@@ -78,6 +80,7 @@ Array.from(get_form).forEach(element=>{
         document.getElementById(key).value = c_data[key]
     }
         }
+    document.location.href="#top"
  
 }
 )

@@ -1,0 +1,19 @@
+:root{
+    --first_color:#f5f6ff;
+    --second_color:#ffffff;
+
+    --third_color:#3b3db3;
+    --fourth_color:#685AFF;
+
+    --fifth:#9CCFFF;
+    --sixeth:#3537a8;
+
+    --lgreen:#eaffea;
+    --lred:#ffe5e5;
+
+    --success:#685AFF;
+    --success_hover:#3b3db3;
+
+    --active:#FF5B5B;
+    --disable:#3b3db380;
+}

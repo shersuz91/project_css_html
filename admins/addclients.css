@@ -1,8 +1,6 @@
 
 
-#form_section, main, body{
-overflow: hidden;
-}
+
 .form_bar{
     display: flex;
     gap: 30px;
@@ -58,9 +56,10 @@ left: 100%;
     z-index: 3;
 }
 form{
-    overflow-y: auto;
-    height: 100vh;
+    overflow-x: hidden;
+    overflow-y:hidden;
     border-radius: 10px;
+    height: 100vh;
     padding: 0px;
     display: grid;
     gap: 0px;
@@ -70,18 +69,35 @@ form{
     position: relative;
     padding-bottom: 200px;
     margin: auto;
+    
+
 }
-form.d-grid>div {
+.form_box {
     padding: 10px 10px 100px;
-    position: relative;
-    left: 0;
     border-radius: 10px;
-      transition: opacity .7s , transform 1s;
+    transition: .4s;
     opacity: 0;
     background: #ededed;
+    position: absolute;
+    left: 100% ;
+    top: 0;
+    width: 100%;
+}
+.form_box:nth-child(1){
+    z-index: 5;
+}
+.form_box:nth-child(2){
+    z-index: 4;
+}
+.form_box:nth-child(3){
+    z-index: 3;
+}
+.form_box:nth-child(4){
+    z-index: 2;
 }
 form.d-grid>div.active_box{
     opacity: 1;
+    left: 0 ;
 }
 form label{
     display: flex;
