@@ -13,39 +13,40 @@
 </head>
 <body>
     <div >
-        <header class="sticky-top row justify-content-center align-items-center border-bottom border-light-subtle">
-            <div id="logo" class="text-center border-end border-light-subtle col-2 h-100 row justify-content-center align-items-center m-0 p-0"><img class="w-auto" src="../images/logo6.png" alt="logo"></div>
-            <div class=" col-10 h-100 row justify-content-center align-items-center m-0 p-0 px-2" >
-                <div class="row ">
-                    <div class="search_box row col-6 px-2">
+        <header class=" sticky-top row justify-content-between align-items-center border-bottom border-light-subtle">
+            <div id="logo" class="col-auto col-md-2 text-center border-end border-light-subtle h-100 row justify-content-center align-items-center m-0 p-0"><img class="w-auto" src="../images/logo6.png" alt="logo"></div>
+            <div class="col-auto col-md-10 h-100 row justify-content-center align-items-center m-0 p-0 px-2" >
+                <div class="row justify-content-end">
+                    <div class="d-none d-md-flex search_box row col-6 px-2">
                         <label for="search" class="w-auto row justify-content-center align-items-center p-0 m-0 border border-secondary-subtle border-end-0  rounded-start-3 rounded-end-0 "><i class="fa-solid fa-magnifying-glass"></i></label><input id="search" class="col-4 border border-secondary-subtle border-start-0 rounded-end-3 rounded-start-0 " type="search">
                     </div>
-                    <div class="row col-6 justify-content-end gap-2">
-                        <div class="name_account col-5 m-0 p-0"><span id="name_admin"></span><span>Admin</span></div>
-                        <img src="../images/profile1.png" class="flex_topimg m-0 p-0" alt="profile">
+                    <div class="row col-12 col-md-6 justify-content-end gap-2">
+                        <div class="name_account col-4 m-0 p-0"><span id="name_admin"></span><span>Admin</span></div>
+                        <img src="../images/profile1.png" class="col-4 flex_topimg m-0 p-0" alt="profile">
+                        <button class="col-4 " id="bar_btn"><i class="fa-solid fa-bars" style="color: rgb(131, 192, 251);"></i></button>
                     </div>
                 </div>
             </div>
         </header>
         <div class="row">
-            <aside  class="col-2 border-end border-light-subtle position-fixed">
-                <ul class="px-0">
-                    <li class="px-2 my-4"><a href="./dashboard.html"  class=" p-2 row rounded-2"><i class="fa-solid fa-chart-line  col-auto"></i>Dashboard</a></li>
-                    <li class="px-2 my-4"><a href="./clients.html" class=" p-2 row rounded-2"><i class="fa-solid fa-user-group  col-auto"></i>clients</a></li>
-                    <li class="px-2 my-4"><a href="./addclients.html" class="active  p-2 row rounded-2"><i class="  fa-solid fa-user-plus  col-auto"></i>Add client</a></li>
-                    <li class="px-2 my-4"><a href="./plans.html" class=" p-2 row rounded-2"><i class="fa-solid fa-money-check  col-auto"></i>Plans</a></li>
-                    <li class="px-2 my-4"><a href="./settings.html" class=" p-2 row rounded-2"><i class="fa-solid fa-gear  col-auto"></i>Settings</a></li>
-                </ul>
-            </aside>
-            <main  class="col-10">
-                 <section id="top" class="title">
-                <div>
+            <aside  class="col-8 col-md-6 col-lg-2 border-end border-light-subtle position-fixed right-0">
+            <ul class="px-0">
+                <li class="px-2 my-4"><a href="./dashboard.html"  class="  p-2 row rounded-2"><i class="fa-solid fa-chart-line  col-auto"></i>Dashboard</a></li>
+                <li class="px-2 my-4"><a href="./clients.html" class="  p-2 row rounded-2"><i class="fa-solid fa-user-group  col-auto"></i>clients</a></li>
+                <li class="px-2 my-4"><a href="./addclients.html" class="active p-2 row rounded-2"><i class="fa-solid fa-user-plus  col-auto"></i>Add client</a></li>
+                <li class="px-2 my-4"><a href="./plans.html" class=" p-2 row rounded-2"><i class="fa-solid fa-money-check  col-auto"></i>Plans</a></li>
+                <li class="px-2 my-4"><a href="./settings.html" class=" p-2 row rounded-2"><i class="fa-solid fa-gear  col-auto"></i>Settings</a></li>
+            </ul>
+        </aside>
+        <main   class="col-12 col-lg-10">
+            <section class="row align-items-center justify-content-end flex-column flex-md-row">
+                <div class="col-auto col-md-6 col-lg-10 align-self-start">
                     <h1>Add New Client</h1>
                     <p class="describe">Fill out the form below to add a new client</p>
                 </div>
             </section>
                 <section id="form_section">
-                    <div class="form_bar" >
+                    <div class="form_bar  d-md-flex" >
                         <span class="active_span" form_bar=0>
                             <span>Client Information</span>
                         </span>
@@ -57,10 +58,10 @@
                     <form action=""   class="d-grid">
                         <div id="client_info" class="form_box active_box" form_box = 0>
                             <h2>Client Information</h2>
-                            <label><span>Client First Name</span> <input name="first_name" type="text" required>
+                            <label><span>First Name</span> <input name="first_name" type="text" required>
                             <p class="alert">This is required.</p>
                             </label>
-                            <label><span>Client Last Name</span> <input name="last_name" type="text" required>
+                            <label><span>Last Name</span> <input name="last_name" type="text" required>
                             <p class="alert">This is required.</p>
                             </label>
                             <label><span>Email</span> <input name="email" type="email" required>
@@ -152,8 +153,12 @@
                         </div>     
                                          
                     </form>
-                    <div id="control_form">
-                         
+                    <div id="success_add">
+                         <div id="icon_done">
+                            <i class="fa-regular fa-circle-check" style="color: rgb(131, 192, 251);"></i>
+                         </div>
+                         <p>Client Successfully added</p>
+                         <small>Visite <a href="./clients.html">Clients</a> to check the updates</small>
                     </div>
 
                 </section>

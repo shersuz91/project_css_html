@@ -48,11 +48,11 @@ for (let i = 0; i < our_clients.length; i++){
                 <td>${our_clients[i].id}</td>
                 <td>${our_clients[i].name}</td>
                 <td class='service'>${our_clients[i].comapny}</td>
-                <td>${our_clients[i].plan}</td>
-                <td>${our_clients[i].start}</td>
-                <td>${end}</td>
-                <td class='status'>${status}</td>
-                <td>
+                <td class='md_show'>${our_clients[i].plan}</td>
+                <td class='md_show'>${our_clients[i].start}</td>
+                <td class='md_show'>${end}</td>
+                <td class='status '>${status}</td>
+                <td >
                 <div class='action'>
                 <a href='./edit.html?id${our_clients[i].id}'><i class="fa-regular fa-pen-to-square"></i></a><a href='delete_file.html?id${our_clients[i].id}'><i class="fa-regular fa-trash-can"></i></a>
                 </div></td>

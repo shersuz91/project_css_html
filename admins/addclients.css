@@ -1,22 +1,26 @@
 
 
+main{
+    padding: 0 !important;
+    overflow: hidden;
 
+}
 .form_bar{
     display: flex;
-    gap: 30px;
+    gap: 10px;
     margin: 0 0 10px 0;
     justify-content: center;
     background-color: var(--sixeth);
-    padding: 10px;
+    padding: 5px;
     width: max-content;
     margin: auto;
     border-radius: 10px;
     color: var(--third_color);
 }
 .form_bar > span {
-    width: 148px;
     text-align: center;
-    padding: 5px;
+    padding:0 5px;
+    font-size: 13px;
     border: 1px solid;
     border-radius: 10px;
     position: relative;
@@ -73,7 +77,7 @@ form{
 
 }
 .form_box {
-    padding: 10px 10px 100px;
+    padding: 10px 10px 200px;
     border-radius: 10px;
     transition: .4s;
     opacity: 0;
@@ -82,6 +86,8 @@ form{
     left: 100% ;
     top: 0;
     width: 100%;
+    overflow: scroll;
+    height: 100%;
 }
 .form_box:nth-child(1){
     z-index: 5;
@@ -99,22 +105,22 @@ form.d-grid>div.active_box{
     opacity: 1;
     left: 0 ;
 }
-form label{
+
+form label {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     padding: 10px;
 }
-form label input, form label select, form label textarea{
-    padding: 10px 10px;
+
+form label input, form label select, form label textarea {
+    padding: 6px 4px;
     border-radius: 8px;
     border: 1px solid #3333333a;
-    outline:none;
+    outline: none;
     background: linear-gradient(145deg, #fefefe, #d5d5d5);
-    box-shadow:  5px 5px 5px #c0c0c0,
+    box-shadow: 5px 5px 5px #c0c0c0,
                 -5px -5px 5px #ffffff;
     transition: .4s;
-    
 }
 form label input:hover, form label select:hover, form label textarea:hover{
     background-color: white;
@@ -157,10 +163,7 @@ form label:has(:required) span::after{
 }
 
 .box_review{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
+    display: block;
 }
 #control_form{
     position: fixed;
@@ -200,3 +203,65 @@ background-color: white;
     padding: 0;
     display: none;
 }
+
+div#success_add {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+   main{
+            overflow: auto;
+            padding-right: calc(var(--bs-gutter-x) * .5) !important;
+            padding-left: calc(var(--bs-gutter-x) * .5) !important;
+    }
+    .form_bar > span {
+    width: 148px;
+    }
+    .form_bar{
+    gap: 30px;
+    padding: 10px;
+    width: max-content;
+    margin: auto;
+    border-radius: 10px;
+    color: var(--third_color);
+}  .form_bar > span {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.form_box {
+    padding: 10px 10px 100px;
+    overflow: hidden;
+}
+form label{
+    gap: 10px;
+}
+form label input, form label select, form label textarea{
+    padding: 10px 10px;
+    
+}
+
+.box_review{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }

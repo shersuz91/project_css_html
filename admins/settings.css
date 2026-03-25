@@ -1,4 +1,6 @@
 
+
+
 form{
     color: var(--third_color);
 }
@@ -8,7 +10,7 @@ form{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 80%;
+    width: 100%;
     margin: 20px 0;
     box-shadow: 0 0 4px #333;
 }
@@ -19,9 +21,12 @@ form{
 .group_input h5 {
     border-bottom: 1px solid #3333332e;
 }
-.info{
+
+.info {
     display: grid;
-    grid-template-areas: "name l_name""email phone";
+    grid-template-areas: "name l_name"
+        "email email"
+        "phone phone";
     gap: 10px;
 }
 label[for="f_name"]{
@@ -143,3 +148,26 @@ input[type="checkbox"] {
 .btn_control button:last-child{
     background-color: var(--success);
 }
+
+
+@media (min-width: 576px) { 
+   
+    .group_input{
+        width: 80%;
+    }
+    .info{
+    grid-template-areas: "name l_name""email phone";
+}
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }

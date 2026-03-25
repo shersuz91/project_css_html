@@ -1,6 +1,10 @@
 import { admins, our_clients } from "./module.js"
 let form = document.querySelector("form")
 let submit = document.querySelector("input[type='submit']")
+if (localStorage.getItem("admin_setting") != null){
+    var admins_ = JSON.parse(localStorage.getItem("admin_setting"))
+    document.location.href="./check_account/check_account.html?id="+admins_.id
+}
 submit.addEventListener("click", function(e){
      e.preventDefault()
         var formatD =  new FormData(form)

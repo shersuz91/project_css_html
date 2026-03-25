@@ -101,6 +101,8 @@ btn_submit.addEventListener("click", function(e){
         "notes":c_data["notes"]
     }
     add_client(new_client)
+    
+    document.location.href="./addclients.html"
 
 })
 

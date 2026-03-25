@@ -1,3 +1,4 @@
+
 .add_client{
     background-color: var(--success);
     color: white;
@@ -14,10 +15,14 @@ color: white;
     display: flex;
     gap: 10px;
     align-items: stretch;
-    padding: 30px ;
-    box-shadow: 1px 1px 3px #333;
     border-radius: 10px;
-    margin: 30px 0;
+
+    
+
+    flex-direction: column;
+    padding: 5px 0;
+    box-shadow: none;
+    margin: 10px 0 0;
 }
 .filter_box .search_box{
     flex: 2;
@@ -25,11 +30,13 @@ color: white;
 
 
 
-.select_filter select {
-    padding: 10px 20px;
+
+  .select_filter select {
+    padding: 5px;
+    height: 100%;
     border-radius: 10px;
     font-size: 17px;
-    height: 100%;
+
 }
 .select_filter select option {
     font-size: 20px;
@@ -113,12 +120,28 @@ td .action a:hover{
 .display_status{
     display: none;
 }
-
+.md_show{
+    display:none
+}
 
 @media (min-width: 576px) { 
     body{
         background-color: red;
     }
+   
+    .filter_box{
+        flex-direction: row;
+        padding: 30px ;
+        box-shadow: 1px 1px 3px #333;
+        margin: 30px 0;
+    }
+  .select_filter select {
+    padding: 10px 20px;
+    height: 100%;
+}
+.md_show{
+    display:table-cell;
+}
  }
 
  /* Medium devices (tablets, 768px and up) */
