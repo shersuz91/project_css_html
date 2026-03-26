@@ -28,7 +28,7 @@
             </div>
         </header>
         <div class="row">
-        <aside  class="col-10 col-md-3 col-lg-2 border-end border-light-subtle position-fixed right-0">
+        <aside  class="col-10 col-sm-4 col-md-3 col-lg-2 border-end border-light-subtle position-fixed right-0">
             <ul class="px-0">
                 <li class="px-2 my-4"><a href="./dashboard.html"  class="  p-2 row rounded-2"><i class="fa-solid fa-chart-line  col-auto"></i>Dashboard</a></li>
                 <li class="px-2 my-4"><a href="./clients.html" class="active  p-2 row rounded-2"><i class="fa-solid fa-user-group  col-auto"></i>clients</a></li>
@@ -37,7 +37,7 @@
                 <li class="px-2 my-4"><a href="./settings.html" class=" p-2 row rounded-2"><i class="fa-solid fa-gear  col-auto"></i>Settings</a></li>
             </ul>
         </aside>
-        <main   class="col-12 col-md-9 col-lg-10">
+        <main   class="col-12  col-lg-10">
             <section class="row align-items-center justify-content-end flex-column flex-md-row">
                 <div class="col-auto col-md-6 col-lg-10 align-self-start">
                     <h1>Clients</h1>
@@ -50,8 +50,8 @@
             <section class="table_box">
                 <div class="filter_box ">
                     <div class="search_box row">
-                        <label for="filter"  class=" col-2 col-md-1 row justify-content-center align-items-center p-0 m-0 border border-secondary-subtle border-end-0  rounded-start-3 rounded-end-0 "><i class="fa-solid fa-magnifying-glass"></i></label>
-                        <input id="filter" class="col-10 col-md-6 border border-secondary-subtle border-start-0 rounded-end-3 rounded-start-0 " type="search">
+                        <label for="filter"  class=" col-2 col-lg-1 row justify-content-center align-items-center p-0 m-0 border border-secondary-subtle border-end-0  rounded-start-3 rounded-end-0 "><i class="fa-solid fa-magnifying-glass"></i></label>
+                        <input id="filter" class="col-10 col-lg-6 border border-secondary-subtle border-start-0 rounded-end-3 rounded-start-0 " type="search">
                     </div>
                     <div class="select_filter">
                         <select name=""  id="service_select" >
@@ -72,14 +72,14 @@
                     <table class="body_table">
                         <thead>
                             <tr>
-                                <th>Client Name</th>
-                                <th>Client Name</th>
+                                <th>ID</th>
+                                <th>Name</th>
                                 <th>SERVICE</th>
-                                <th class="md_show">PLAN</th>
-                                <th class="md_show">START DATE</th>
-                                <th class="md_show">EXPIRY DATE</th>
+                                <th >PLAN</th>
+                                <th >START</th>
+                                <th >EXPIRY</th>
                                 <th >STATUS</th>
-                                <th>ACTIONS</th>
+                                <th class='td_action'>ACTIONS</th>
                             </tr>
                         </thead>
                         <tbody id="body_table">

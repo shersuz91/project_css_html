@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body{
+    font-family: inter;
+}
+header {
+    background-image: linear-gradient(150deg, #4F39F6 , #155DFC, #8200DB);
+    color: white;
+}
+
+nav {
+    background: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0  ;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 7px;
+    transition: .4s;
+    background-color:#8200DB ;
+    box-shadow: 0px 0px 5px #333;
+}
+
+#welcome{
+    text-align: center;
+    padding: 50px 0;
+}
+#welcome h1{
+ padding: 5px 0;
+}
+
+#welcome p {
+    max-width: 60%;
+    margin: auto;
+    line-height: 35px;
+    padding: 10px 0;
+}
+.quick_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.quick_btn a {
+    /* color: white; */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 3px #333;
+}
+.quick_btn a:first-child {
+    background: white;
+}
+
+.quick_btn a:last-child {
+    color: white;
+    /* background: inherit; */
+}

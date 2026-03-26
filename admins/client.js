@@ -2,6 +2,7 @@ let body_table = document.getElementById("body_table")
 var our_clients = JSON.parse(localStorage.getItem("clients_data"))
 let service_select = document.getElementById("service_select")
 let status_select = document.getElementById("status_select")
+var table_box = document.querySelector(".table")
 console.log(our_clients)
 
 for (let i = 0; i < our_clients.length; i++){
@@ -48,11 +49,11 @@ for (let i = 0; i < our_clients.length; i++){
                 <td>${our_clients[i].id}</td>
                 <td>${our_clients[i].name}</td>
                 <td class='service'>${our_clients[i].comapny}</td>
-                <td class='md_show'>${our_clients[i].plan}</td>
-                <td class='md_show'>${our_clients[i].start}</td>
-                <td class='md_show'>${end}</td>
+                <td >${our_clients[i].plan}</td>
+                <td >${our_clients[i].start}</td>
+                <td >${end}</td>
                 <td class='status '>${status}</td>
-                <td >
+                <td class='td_action'>
                 <div class='action'>
                 <a href='./edit.html?id${our_clients[i].id}'><i class="fa-regular fa-pen-to-square"></i></a><a href='delete_file.html?id${our_clients[i].id}'><i class="fa-regular fa-trash-can"></i></a>
                 </div></td>
@@ -109,3 +110,16 @@ status_select.addEventListener("change", function(e){
         
     })
 })
+
+function table_h(){
+var top_table = table_box.offsetTop
+var w_h = this.window.innerHeight
+
+console.log(top_table)
+console.log(w_h)
+table_box.style.height = w_h -  top_table +"px"
+}
+window.addEventListener("resize", function(){
+table_h()
+})
+table_h()

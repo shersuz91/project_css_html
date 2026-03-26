@@ -1,4 +1,7 @@
 
+main{
+    overflow: hidden;
+}
 .add_client{
     background-color: var(--success);
     color: white;
@@ -45,6 +48,10 @@ color: white;
 select > option:hover, select > option:checked{
     background-color: rgba(173, 216, 230, 0.562);
 }
+.table{
+    overflow: scroll;
+    padding-bottom:100px ;    
+}
 
 table {
     
@@ -56,7 +63,12 @@ table {
     text-align: center;
 }
 
-
+thead{
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    
+}
 table tbody tr:hover{
 background-color: rgba(211, 211, 211, 0.375);
 }
@@ -65,10 +77,21 @@ th, td {
     padding: 4px;
     text-align: center;
     border: 1px solid #33333350;
+    font-size: 13px;
 }
 th{
-    color: #6a7282;
+    color: white ;
 }
+thead > tr > th{
+    background-color: var(--seven);
+}
+.td_action{
+    position: sticky;
+    top: 0;
+    right: 0;
+    background: var(--seven);
+}
+
 td:first-child{
     font-weight: 600;
 }
@@ -128,6 +151,9 @@ td .action a:hover{
     body{
         background-color: red;
     }
+    main{
+    /* overflow: auto; */
+}
    
     .filter_box{
         flex-direction: row;
@@ -141,6 +167,9 @@ td .action a:hover{
 }
 .md_show{
     display:table-cell;
+}
+th, td{
+    font-size: 16px;
 }
  }
 

@@ -9,7 +9,7 @@
     <link rel="stylesheet"  id="theme_color"  href="">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="admins.css">
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="plans.css">
 </head>
 <body>
     <div >
@@ -29,7 +29,7 @@
             </div>
         </header>
         <div class="row">
-            <aside  class="col-8 col-md-3 col-lg-2 border-end border-light-subtle position-fixed right-0">
+            <aside  class="col-8 col-sm-4 col-md-3 col-lg-2 border-end border-light-subtle position-fixed right-0">
             <ul class="px-0">
                 <li class="px-2 my-4"><a href="./dashboard.html"  class="  p-2 row rounded-2"><i class="fa-solid fa-chart-line  col-auto"></i>Dashboard</a></li>
                 <li class="px-2 my-4"><a href="./clients.html" class="  p-2 row rounded-2"><i class="fa-solid fa-user-group  col-auto"></i>clients</a></li>
@@ -38,15 +38,123 @@
                 <li class="px-2 my-4"><a href="./settings.html" class=" p-2 row rounded-2"><i class="fa-solid fa-gear  col-auto"></i>Settings</a></li>
             </ul>
             </aside>
-        <main   class="col-12 col-md-9 col-lg-10">
+        <main   class="col-12  col-lg-10">
             <section class="row align-items-center flex-column flex-md-row">
                 <div class="col-auto col-md-6 col-lg-10 align-self-start">
-                        <h1>Plans</h1>
+                        <h1>Subscription Plans</h1>
                         <p class="describe">Manage your subscription plans and pricing</p>
                     </div>
                 </section>
                 <section>
-                    <!-- add here the rest and create another sections bellow -->
+                    
+                    <div class="box_plan">
+                        <div class="plan">
+                            <div class="plan_t"><h4>Sarter</h4></div>
+                            <div class="plan_detail">
+                                <div class="price">
+                                <span>$</span>
+                                <b>50</b>
+                                </div>
+                                <p class="plan_comment">Perfect for trying out our services</p>
+                                <ul class="feature">
+                                    <li>Up to 75 clients</li>
+                                    <li>Basic client management</li>
+                                    <li>Up to 5 subscription plans</li>
+                                    <li>Mobile access</li>
+                                    <li>Email support</li>
+                                </ul>
+                            </div>
+                            <div class="action_btn">
+                                <a href="#"><i class="fa-regular fa-pen-to-square" style="color: rgb(99, 230, 190);"></i></a>
+                                <a href="#"><i class="fa-solid fa-trash-can" style="color: #ff4747;"></i></a>
+                            </div>
+
+                        </div>
+                        <div class="plan">
+                            <div class="plan_t"><h4>Professional</h4></div>
+                            <div class="plan_detail">
+                            <div class="price">
+                                <span>$</span>
+                                <b>140</b>
+                            </div>
+                            <p class="plan_comment">Most popular choice for growing businesses</p>
+                            <ul  class="feature">
+                                <li>Up to 250 clients</li>
+                                <li>Advanced client management</li>
+                                <li>Unlimited subscription plans</li>
+                                <li>Unlimited subscription plans</li>
+                                <li>Priority support</li>
+                                <li>Mobile access</li>
+                                <li>Subscription reminders</li>
+                            </ul>
+                            </div>
+                            <div class="action_btn">
+                                <a href="#"><i class="fa-regular fa-pen-to-square" style="color: rgb(99, 230, 190);"></i></a>
+                                <a href="#"><i class="fa-solid fa-trash-can" style="color: #ff4747;"></i></a>
+                            </div>
+
+                        </div>
+                        <div class="plan">
+                            <div class="plan_t"><h4>Business</h4></div>
+                            <div class="plan_detail">
+                            <div class="price">
+                                <span>$</span>
+                                <b>270</b>
+                            </div>
+                            <p class="plan_comment">For large businesses with advanced needs</p>
+                            <ul class="feature">
+                                <li>Up to 600 clients</li>
+                                <li>Advanced client management</li>
+                                <li>Unlimited subscription plans</li>
+                                <li>Staff accounts</li>
+                                <li>Analytics & reports</li>
+                                <li>Subscription notifications</li>
+                                <li>Custom branding</li>
+                            </ul>
+                            </div>
+                            <div class="action_btn">
+                                <a href="#"><i class="fa-regular fa-pen-to-square" style="color: rgb(99, 230, 190);"></i></a>
+                                <a href="#"><i class="fa-solid fa-trash-can" style="color: #ff4747;"></i></a>
+                            </div>
+
+                        </div>
+                        <div class="plan">
+                            <div class="plan_t"><h4>Enterprise</h4></div>
+                            <div class="plan_detail">
+                            <div class="price">
+                                <span>$</span>
+                                <b>500</b>
+                            </div>
+                            <p class="plan_comment">For large businesses with advanced needs</p>
+                            <ul class="feature">
+                                <li>Unlimited clients</li>
+                                <li>24/7 priority support</li>
+                                <li>Unlimited subscription plans</li>
+                                <li>Advanced analytics</li>
+                                <li>API access</li>
+                                <li>Multi-location support</li>
+                                <li>Custom branding</li>
+                                <li>Staff accounts</li>
+                                <li>Analytics & reports</li>
+                            </ul>
+                            </div>
+                            <div class="action_btn">
+                                <a href="#"><i class="fa-regular fa-pen-to-square" style="color: rgb(99, 230, 190);"></i></a>
+                                <a href="#"><i class="fa-solid fa-trash-can" style="color: #ff4747;"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </section>
+                <section id="statistic_">
+                    <h4>Plan Statistics</h4>
+                    <div class="statis_box">
+                        <div class="statis"><b>50</b><span>Starter</span></div>
+                        <div class="statis"><b>140</b><span>Professional</span></div>
+                        <div class="statis"><b>270</b><span>Business</span></div>
+                        <div class="statis"><b>500</b><span>Enterprise</span></div>
+                    </div>
                 </section>
 
             </main>

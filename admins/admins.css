@@ -79,9 +79,10 @@ aside.show{
 aside ul{
     list-style: none;
 }
-aside li {
-    font-size: 20px;
+  aside li {
+    font-size: 16px;
 }
+
 aside li a{
     text-decoration: none;
     color: var(--second_color);
@@ -167,18 +168,7 @@ section.title {
     height: 50px;
     width: auto !important;
     }
-    #bar_btn{
-        display: none;
-    }
-    aside{
-        transition: 0S;
-        left: 0;
-    }
-     main{
-        left: 100%;
-        transform: translate(-100%, 0px);
-
-    }
+    
  }
 
 /* Large devices (desktops, 992px and up) */
@@ -186,23 +176,32 @@ section.title {
     body{
         background-color: green !important;
     }
+
     #bar_btn{
+        display: none;
+    }
+#bar_btn{
         display: none;
     }
     aside{
         transition: 0S;
         left: 0;
     }
+  
      main{
         left: 100%;
         transform: translate(-100%, 0px);
 
     }
+
+    
  }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-    
+       aside li {
+    font-size: 20px;
+}
  }
 
 /* XX-Large devices (larger desktops, 1400px and up) */

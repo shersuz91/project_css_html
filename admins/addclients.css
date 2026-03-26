@@ -180,6 +180,7 @@ left: 0;
 top: 100px;
 z-index: 100;
 background-color: white;
+margin: 15px 0;
 }
 .next{
     background-color: var(--fourth_color);
