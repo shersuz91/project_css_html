@@ -155,8 +155,8 @@ section.title {
         background-color: red;
     }
      main{
-        padding-right: calc(var(--bs-gutter-x) * .5);
-        padding-left: calc(var(--bs-gutter-x) * .5);
+        padding-right: calc(var(--bs-gutter-x) * .5) !important;
+        padding-left: calc(var(--bs-gutter-x) * .5) !important;
     }
     
  }
@@ -165,7 +165,20 @@ section.title {
 @media (min-width: 768px) { 
    #logo img {
     height: 50px;
-}
+    width: auto !important;
+    }
+    #bar_btn{
+        display: none;
+    }
+    aside{
+        transition: 0S;
+        left: 0;
+    }
+     main{
+        left: 100%;
+        transform: translate(-100%, 0px);
+
+    }
  }
 
 /* Large devices (desktops, 992px and up) */

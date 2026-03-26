@@ -1,23 +1,24 @@
 
 
 main{
-    padding: 0 !important;
-    overflow: hidden;
+    overflow: hidden !important;
 
 }
 .form_bar{
+    font-size: 1vw;
     display: flex;
     gap: 10px;
     margin: 0 0 10px 0;
     justify-content: center;
     background-color: var(--sixeth);
     padding: 5px;
-    width: max-content;
+    max-width: 700px;
     margin: auto;
     border-radius: 10px;
     color: var(--third_color);
 }
 .form_bar > span {
+    flex-grow: 1;
     text-align: center;
     padding:0 5px;
     font-size: 13px;
@@ -77,7 +78,7 @@ form{
 
 }
 .form_box {
-    padding: 10px 10px 200px;
+    padding: 10px 10px 400px;
     border-radius: 10px;
     transition: .4s;
     opacity: 0;
@@ -214,6 +215,16 @@ div#success_add {
     text-align: center;
 }
 
+@media (min-width: 576px) { 
+    body{
+        background-color: red;
+    }
+    
+    .form_bar > span{
+        padding: 10px 5px;
+    }
+ }
+
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
    main{
@@ -227,18 +238,11 @@ div#success_add {
     .form_bar{
     gap: 30px;
     padding: 10px;
-    width: max-content;
-    margin: auto;
-    border-radius: 10px;
-    color: var(--third_color);
-}  .form_bar > span {
-    padding: 5px;
-    font-size: 16px;
-}
+}  
+
 
 .form_box {
-    padding: 10px 10px 100px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 form label{
     gap: 10px;
@@ -258,7 +262,16 @@ form label input, form label select, form label textarea{
  }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+@media (min-width: 992px) { 
+
+    #form_section{
+        width: max-content;
+        margin: auto;
+    }
+    .form_bar > span {
+    font-size: 16px;
+}
+ }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  }
