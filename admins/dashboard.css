@@ -20,3 +20,14 @@ h4.status_title {
     font-size: medium;
     font-weight: 600;
 }
+.table_data {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background: var(--first_color);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #333;
+}
+table tbody tr:hover td {
+    background-color: var(--dashboardtable);
+    cursor: pointer;
+}
