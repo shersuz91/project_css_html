@@ -2,8 +2,8 @@ section.flex_box {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
-    padding: 16px 16px;
+    gap: 5%;
+    padding: 30px 30px;
     background: var(--first_color);
     border-radius: 10px;
     box-shadow: 1px 1px 3px #333;
@@ -13,7 +13,7 @@ section.flex_box {
     gap: 16px;
     padding: 16px;
     background: var(--second_color);
-    box-shadow: 1px 1px 3px #333;
+   box-shadow: 0px 0px 10px 2px var(--fourth_color);
     border-radius: 10px;
 }
 h4.status_title {
@@ -30,4 +30,20 @@ h4.status_title {
 table tbody tr:hover td {
     background-color: var(--dashboardtable);
     cursor: pointer;
+}
+.card {
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 2px var(--fourth_color);
+    box-sizing: border-box;
+}
+.card:hover{
+    box-shadow: 0px 0px 10px 2px var(--lgreen);
+   cursor:pointer
+}
+.content {
+    padding: 10px;
+    background: var(--second_color);
+    margin-top: 10%;
 }
