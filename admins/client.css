@@ -148,9 +148,7 @@ td .action a:hover{
 }
 
 @media (min-width: 576px) { 
-    body{
-        background-color: red;
-    }
+    
     main{
     /* overflow: auto; */
 }

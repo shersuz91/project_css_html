@@ -217,9 +217,7 @@ div#success_add {
 }
 
 @media (min-width: 576px) { 
-    body{
-        background-color: red;
-    }
+   
     
     .form_bar > span{
         padding: 10px 5px;

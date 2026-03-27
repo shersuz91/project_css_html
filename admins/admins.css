@@ -152,9 +152,7 @@ section.title {
 
 
 @media (min-width: 576px) { 
-    body{
-        background-color: red;
-    }
+    
      main{
         padding-right: calc(var(--bs-gutter-x) * .5) !important;
         padding-left: calc(var(--bs-gutter-x) * .5) !important;
@@ -173,9 +171,7 @@ section.title {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    body{
-        background-color: green !important;
-    }
+    
 
     #bar_btn{
         display: none;

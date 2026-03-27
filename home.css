@@ -16,7 +16,13 @@ header {
     background-image: linear-gradient(150deg, #4F39F6 , #155DFC, #8200DB);
     color: white;
 }
-
+button#bar_btn {
+    margin-left: auto;
+    margin-right: 10px;
+    display: block;
+    background: transparent;
+    border: none;
+}
 nav {
     background: white;
     padding: 10px 0;
@@ -25,7 +31,8 @@ nav {
 nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 50px;
     list-style: none;
     margin: 0;
     padding: 0  ;
@@ -39,13 +46,25 @@ nav ul li a {
     font-weight: bold;
     border-radius: 7px;
     transition: .4s;
-    background-color:#8200DB ;
+    background-color:#7d97c1 ;
+    box-shadow: 0px 0px 2px #333;
+}
+nav ul li a:hover{
     box-shadow: 0px 0px 5px #333;
 }
 
-#welcome{
+
+section{
     text-align: center;
-    padding: 50px 0;
+     
+}
+.backLayout{
+    
+    background-color: #f9fafb;
+    padding: 100px;
+}
+#welcome{
+    padding: 100px 0;
 }
 #welcome h1{
  padding: 5px 0;
@@ -79,3 +98,161 @@ nav ul li a {
     color: white;
     /* background: inherit; */
 }
+#about{
+    box-shadow: 0px 0px 3px #333;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 50px 50px 100px;
+}
+
+
+.disc{
+    color: gray;
+    margin-bottom: 30px;
+
+}
+.box_offer{
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.box_offer > div{
+    width: 100%;
+    border: 1px solid;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: start;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+}
+.icon{
+    color: white;
+    /* padding: 5px 7px; */
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box_offer > div:nth-child(1) .icon{
+    background-color: #477FFF;
+}
+.box_offer > div:nth-child(2) .icon{
+    background-color: #615FFF;
+}
+.box_offer > div:nth-child(3) .icon{
+    background-color: #AD46FF;
+}
+.box_offer > div:nth-child(4) .icon{
+    background-color: #00C950;
+}
+
+#for_how{
+    margin: 55px auto;
+}
+
+.offer_detail{
+    display: flex;
+    flex-direction: column;
+}
+.offer_detail h4{
+    font-size: 1.3em;
+}
+.box_service{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+.services{
+    width: 100%;
+    
+    padding: 30px;
+    border-radius: 10px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.services:nth-child(1){
+    background-color: #eff6ff;
+    color: #155dfc;
+}
+.services:nth-child(2){
+    background-color: #eef2ff;
+    color: #4f39f6;
+}
+.services:nth-child(3){
+    background-color: #faf5ff;
+    color: #9810fa;
+}
+.services:nth-child(4){
+    background-color: #f0fdf4;
+    color: #00a63e;
+}
+.serv_icon{
+    font-size: 50px;
+}
+.box_plan{
+    text-align: left;
+}
+.plan_t{
+    padding: 30px !important ;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.plan_detail{
+    padding:0  20px;
+}
+.action_btn a{
+    text-decoration: none;
+    color: white;
+}
+.plan:nth-child(1) .action_btn a{
+    background-color: #155dfc;
+}
+.plan:nth-child(2) .action_btn a{
+    background-color:#4f39f6 ;
+}
+.plan:nth-child(3) .action_btn a{
+    background-color:#9810fa ;
+}
+.plan:nth-child(4) .action_btn a{
+    background-color:#00a63e ;
+}
+
+
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  
+    
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    
+    button#bar_btn{
+        display: none;
+    }
+    
+
+    
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+       aside li {
+    font-size: 20px;
+}
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }
