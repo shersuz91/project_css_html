@@ -14,26 +14,29 @@
 </head>
 <body class="inter">
     <header>
-            <button class="m-end-auto" id="bar_btn"><i class="fa-solid fa-bars" style="color: rgb(131, 192, 251);"></i></button>
+            <button class="m-end-auto" id="bar_btn" ><i class="fa-solid fa-bars" style="color: rgb(131, 192, 251);" btn></i></button>
             <nav class="container-fluid">
                 <div id="logo" class="d-none col-auto col-md-3 col-lg-2 text-center border-end border-light-subtle h-100 row justify-content-center align-items-center m-0 p-0"><img class="w-auto" src="../images/logo6.png" alt="logo"></div>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Businesses</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul close>
+                    <li close><a href="#" close>About Us</a></li>
+                    <li close><a href="#" close>Features</a></li>
+                    <li close><a href="#" close>Businesses</a></li>
+                    <li close><a href="#" close>Pricing</a></li>
+                    <li close><a href="#" close>Contact</a></li>
                 </ul>
             </nav>
         <div >
             <div id="logo" class="d-none col-auto col-md-3 col-lg-2 text-center h-100 row justify-content-center align-items-center m-0 p-0"><img class="w-auto" src="../images/logo6.png" alt="logo"></div>
             <section id="welcome" class="container">
-                <h1>Welcome to WebyHub</h1>
-                <p>We provide a modern platform that helps small businesses like gyms, taekwondo academies, and music schools efficiently manage their clients and subscription plans</p>
-                <div class="quick_btn">
-                    <a href="#">Contact Us</a>
-                    <a href="#">Get Membership</a>
+                <div class="wel_det">
+                    <h1 class="breath_trans">Welcome to WebyHub</h1>
+                    <p class="breath_trans">We provide a modern platform that helps small businesses like gyms, taekwondo academies, and music schools efficiently manage their clients and subscription plans</p>
+                    <div class="quick_btn d-none d-md-flex">
+                        <a href="#" class="contactus"><span>Contact Us</span></a>
+                        <a href="#"><span>Get Membership</span></a>
+                    </div>
                 </div>
+                <img class="section_img" src="./undraw_random-thoughts_spw5.svg" alt="">
             </section>
         </div>
     </header>
@@ -42,11 +45,12 @@
             <section id="about" class="container">
                 <h2>About Our Service</h2>
                 <p>Our subscription management system is designed specifically for small businesses that offer membership-based services. Whether you run a gym, martial arts academy, music school, or training center, our platform streamlines your operations by providing powerful tools to organize client information, track subscription plans, manage renewals, and give your customers instant access to their membership status. Say goodbye to spreadsheets and manual tracking – our intuitive dashboard makes client management effortless.</p>
+                <img class="breath section_img" src="./undraw_team-work_i1f3.svg" alt="about">
             </section>
             <section id="offer" class="container">
                 <h2>What We Offer</h2>
                 <p class="disc">Powerful features to streamline your business operations</p>
-                <div class="box_offer">
+                <div class="box_offer d-none d-md-flex">
                     <div>
                         <div class="icon"><i class="fa-solid fa-user-group" "></i></div>
                         <div class="offer_detail">
@@ -76,9 +80,38 @@
                         </div>
                     </div>
                 </div>
+                <div class="box_offer d-md-none">
+                    <div>
+                        <details>
+                            <summary><span class="icon"><i class="fa-solid fa-user-group" "></i></span><h4>Client Management</h4></summary>
+                            <p class="disc">Easily organize and manage all your clients in one centralized system with detailed profiles and history.</p>
+                        </details>
+                    </div>
+                    <div>
+                        <details>
+                            <summary><span class="icon"><i class="fa-solid fa-calendar" "></i></span><h4>Subscription Tracking</h4></summary>
+                            <p class="disc">Track membership start dates, expiry dates, and renewal schedules automatically with smart notifications.</p>
+                        </details>
+                        
+                    </div>
+                    <div>
+                        
+                        <details>
+                            <summary><span class="icon"><i class="fa-solid fa-credit-card" "></i></span><h4>Flexible Membership Plans</h4></summary>
+                            <p class="disc">Create and manage multiple subscription plans with custom pricing and duration options.</p>
+                        </details>
+                    </div>
+                    <div>
+                        <details>
+                            <summary><span class="icon"><i class="fa-solid fa-magnifying-glass" "></i></span><h4>Customer Access</h4></summary>
+                            <p class="disc">Allow customers to check the status of their clients' subscriptions at any time using their membership number or their phone number.</p>
+                        </details>
+                    </div>
+                </div>
+                
             </section>
         </div>
-        <section id="for_how" class="container">
+        <section id="for_how" class=" container">
             <h2>Who Can Use This Service</h2>
             <p class="disc">Perfect for various membership-based businesses</p>
             <div class="box_service">
@@ -100,7 +133,9 @@
                 </div>
             </div>
         </section>
+        
         <div class="backLayout">
+            
             <section id="price">
                 <h2>Pricing</h2>
                 <p class="disc">Choose the plan that fits your business</p>
@@ -120,6 +155,7 @@
                                     <li>Mobile access</li>
                                     <li>Email support</li>
                                 </ul>
+                                <img class="breath" src="./undraw_access-account_aydp.svg" alt="mobile">
                             </div>
                             <div class="action_btn">
                                 <a href="#">Start Plan</a>
@@ -143,6 +179,7 @@
                                 <li>Mobile access</li>
                                 <li>Subscription reminders</li>
                             </ul>
+                            <img class="breath" src="./undraw_connecting-teams_nnjy.svg" alt="support">
                             </div>
                             <div class="action_btn">
                                 <a href="#">Start Plan</a>
@@ -166,6 +203,7 @@
                                 <li>Subscription notifications</li>
                                 <li>Custom branding</li>
                             </ul>
+                            <img class="breath" src="./undraw_visual-data_1eya.svg" alt="analayz">
                             </div>
                             <div class="action_btn">
                                 <a href="#">Start Plan</a>
@@ -191,6 +229,7 @@
                                 <li>Staff accounts</li>
                                 <li>Analytics & reports</li>
                             </ul>
+                            <img class="breath" src="./undraw_cloudflare-dev_nf79.svg" alt="api">
                             </div>
                             <div class="action_btn">
                                 <a href="#">Start Plan</a>
@@ -200,10 +239,179 @@
                     </div>
             </section>
 
-            
+            <section id="rate" class="container">
+                <h2>What Our Customers Say</h2>
+                <p class="disc">Real feedback from businesses using SubManager</p>
+                <div class="card_box">
+                    <button class="scrol_btn d-none d-md-block" id="prev" type="button" ><i class="fa-solid fa-chevron-left" ></i></button>
+                    <div class="cards active" id="_1">
+                        <div class="cost_det">
+                            <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="">
+                            <div class="cost_info">
+                                <h5 class="name">Sara Jon</h5>
+                                <p class="disc">Owner at FitZone Gym</p>
+                                <div class="rate_star">
+                                    <i class="_1 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_2 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_3 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_4 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_5 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="cost_comm">WebyHub has completely transformed how we manage our gym memberships. The interface is intuitive and our staff loves it. Highly recommend!</p>
+                    </div>
+                    <div class="cards" id="_2">
+                        <div class="cost_det">
+                            <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="">
+                            <div class="cost_info">
+                                <h5 class="name">Sara Jon</h5>
+                                <p class="disc">Owner at FitZone Gym</p>
+                                <div class="rate_star">
+                                    <i class="_1 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_2 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_3 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_4 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_5 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="cost_comm">WebyHub has completely transformed how we manage our gym memberships. The interface is intuitive and our staff loves it. Highly recommend!</p>
+                    </div>
+                    <div class="cards" id="_3">
+                        <div class="cost_det">
+                            <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="">
+                            <div class="cost_info">
+                                <h5 class="name">Sara Jon</h5>
+                                <p class="disc">Owner at FitZone Gym</p>
+                                <div class="rate_star">
+                                    <i class="_1 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_2 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_3 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_4 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_5 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="cost_comm">WebyHub has completely transformed how we manage our gym memberships. The interface is intuitive and our staff loves it. Highly recommend!</p>
+                    </div>
+                    <div class="cards" id="_4">
+                        <div class="cost_det">
+                            <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="">
+                            <div class="cost_info">
+                                <h5 class="name">Sara Jon</h5>
+                                <p class="disc">Owner at FitZone Gym</p>
+                                <div class="rate_star">
+                                    <i class="_1 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_2 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_3 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_4 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_5 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="cost_comm">WebyHub has completely transformed how we manage our gym memberships. The interface is intuitive and our staff loves it. Highly recommend!</p>
+                    </div>
+                    <div class="cards" id="_5">
+                        <div class="cost_det">
+                            <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="">
+                            <div class="cost_info">
+                                <h5 class="name">Sara Jon</h5>
+                                <p class="disc">Owner at FitZone Gym</p>
+                                <div class="rate_star">
+                                    <i class="_1 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_2 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_3 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_4 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_5 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="cost_comm" >WebyHub has completely transformed how we manage our gym memberships. The interface is intuitive and our staff loves it. Highly recommend!</p>
+                    </div>
+                    <div class="cards" id="_6">
+                        <div class="cost_det">
+                            <img src="https://randomuser.me/api/portraits/men/7.jpg" alt="">
+                            <div class="cost_info">
+                                <h5 class="name">Sara Jon</h5>
+                                <p class="disc">Owner at FitZone Gym</p>
+                                <div class="rate_star">
+                                    <i class="_1 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_2 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_3 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_4 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_5 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="cost_comm">WebyHub has completely transformed how we manage our gym memberships. The interface is intuitive and our staff loves it. Highly recommend!</p>
+                    </div>
+                    <div class="cards" id="_7">
+                        <div class="cost_det">
+                            <img src="https://randomuser.me/api/portraits/men/8.jpg" alt="">
+                            <div class="cost_info">
+                                <h5 class="name">Sara Jon</h5>
+                                <p class="disc">Owner at FitZone Gym</p>
+                                <div class="rate_star">
+                                    <i class="_1 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_2 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_3 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_4 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_5 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="cost_comm">WebyHub has completely transformed how we manage our gym memberships. The interface is intuitive and our staff loves it. Highly recommend!</p>
+                    </div>
+                    <div class="cards" id="_8">
+                        <div class="cost_det">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="profile">
+                            <div class="cost_info">
+                                <h5 class="name">Sara Jon</h5>
+                                <p class="disc">Owner at FitZone Gym</p>
+                                <div class="rate_star">
+                                    <i class="_1 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_2 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_3 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_4 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                    <i class="_5 fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="cost_comm">WebyHub has completely transformed how we manage our gym memberships. The interface is intuitive and our staff loves it. Highly recommend!</p>
+                    </div>
+                    <button class="scrol_btn  d-none d-md-block" id="next"><i class="fa-solid fa-angle-right" ></i></button>
+                </div>
+            </section>
         </div>
+        
     </main>
-    
+    <footer >
+        <section id="conec">
+            <div class="cards_">
+                <div class="cards_con">
+                    <i class="fa-solid fa-phone" style="color: rgb(255, 255, 255);"></i>
+                    <p>Phone Number</p>
+                    <p><b>+1 (555) 123-4567</b></p>
+                </div>
+                <div class="cards_con">
+                    <i class="fa-solid fa-phone" style="color: rgb(255, 255, 255);"></i>
+                    <p>Phone Number</p>
+                    <p><b>+1 (555) 123-4567</b></p>
+                </div>
+                <div class="cards_con">
+                    <i class="fa-solid fa-phone" style="color: rgb(255, 255, 255);"></i>
+                    <p>Phone Number</p>
+                    <p><b>+1 (555) 123-4567</b></p>
+                </div>
+            </div>
+            <div class="quick_btn d-none d-md-flex">
+                <a href="#" class="contactus"><span>Contact Us</span></a>
+            </div>
+        </section>
+        <p class="copy_right">© 2026 WebyHub All rights reserved.</p>
+    </footer>
+    <script src="./home.js"></script>
 
 </body>
 </html>
