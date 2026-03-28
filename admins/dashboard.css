@@ -2,7 +2,7 @@ section.flex_box {
     display: flex;
     justify-content: space-evenly;
     align-items: stretch;
-    gap: 5%;
+    gap: 30px;
     padding: 30px 30px;
     background: var(--first_color);
     border-radius: 10px;
@@ -15,6 +15,10 @@ section.flex_box {
     background: var(--second_color);
    box-shadow: 0px 0px 10px 2px var(--fourth_color);
     border-radius: 10px;
+}
+.business_status:hover{
+      box-shadow: 0px 0px 10px 2px var(--lgreen);
+   cursor:pointer;
 }
 h4.status_title {
     font-size: medium;
@@ -46,4 +50,31 @@ table tbody tr:hover td {
     padding: 10px;
     background: var(--second_color);
     margin-top: 10%;
+    text-align: center;
+}
+img {
+    box-shadow: 0px 0px 15px 2px lightgray;
+}
+.reply_action {
+    background: var(--first_color);
+    box-shadow: inset 0px 0px 15px 2px rgb(232, 237, 193);
+}
+a.action.email {
+    padding: 2px;
+    text-decoration: none;
+    color: var(--third_color);
+}
+a.action.phone {
+    padding: 2px;
+    text-decoration: none;
+    color: var(--third_color)
+}
+a.action.email:hover {
+box-shadow: 0px 0px 10px 2px var(--success);
+   cursor:pointer;
+    
+}
+a.action.phone:hover {
+   box-shadow: 0px 0px 10px 2px var(--success);
+   cursor:pointer;
 }
