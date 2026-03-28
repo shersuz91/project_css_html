@@ -1,7 +1,7 @@
 section.flex_box {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: stretch;
     gap: 5%;
     padding: 30px 30px;
     background: var(--first_color);
