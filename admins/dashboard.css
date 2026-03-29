@@ -52,7 +52,7 @@ table tbody tr:hover td {
     margin-top: 10%;
     text-align: center;
 }
-img {
+.card img {
     box-shadow: 0px 0px 15px 2px lightgray;
 }
 .reply_action {

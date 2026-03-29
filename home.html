@@ -12,18 +12,22 @@
     <link rel="stylesheet" href="./admins/plans.css">
     <link rel="stylesheet" href="./home.css">
 </head>
-<body class="inter">
+<body class="inter" id="top_body">
     <header>
+                <div id="logo_ph" class=" d-md-none"><img  src="../images/logo6.png" alt="logo"></div>
+
             <button class="m-end-auto" id="bar_btn" ><i class="fa-solid fa-bars" style="color: rgb(131, 192, 251);" btn></i></button>
             <nav class="container-fluid">
-                <div id="logo" class="d-none col-auto col-md-3 col-lg-2 text-center border-end border-light-subtle h-100 row justify-content-center align-items-center m-0 p-0"><img class="w-auto" src="../images/logo6.png" alt="logo"></div>
+                <div id="logo" class="d-none d-md-block"><img  src="../images/logo6.png" alt="logo"></div>
                 <ul close>
-                    <li close><a href="#" close>About Us</a></li>
-                    <li close><a href="#" close>Features</a></li>
-                    <li close><a href="#" close>Businesses</a></li>
-                    <li close><a href="#" close>Pricing</a></li>
-                    <li close><a href="#" close>Contact</a></li>
+                    <li close><a href="#about_top" id="about_top_a" class="a_link" close>About Us</a></li>
+                    <li close><a href="#offer_top" id="offer_top_a" class="a_link" close>Features</a></li>
+                    <li close><a href="#for_how_top" id="for_how_top_a" class="a_link" close>Businesses</a></li>
+                    <li close><a href="#price_top" id="price_top_a" class="a_link" close>Pricing</a></li>
+                    <li close><a href="#review_top" id="review_top_a" class="a_link" close>Reviews</a></li>
+                    <li close><a href="#conec_top" id="conec_top_a" class="a_link" close>Contact</a></li>
                 </ul>
+                <a id= "panel" href="./admins/dashboard.html">Go to<span><i class="fa-brands fa-cpanel" ></i></span></a>
             </nav>
         <div >
             <div id="logo" class="d-none col-auto col-md-3 col-lg-2 text-center h-100 row justify-content-center align-items-center m-0 p-0"><img class="w-auto" src="../images/logo6.png" alt="logo"></div>
@@ -42,15 +46,17 @@
     </header>
     <main >
         <div class="backLayout ">
+            <div id="about_top" class="space_top"></div>
             <section id="about" class="container">
                 <h2>About Our Service</h2>
                 <p>Our subscription management system is designed specifically for small businesses that offer membership-based services. Whether you run a gym, martial arts academy, music school, or training center, our platform streamlines your operations by providing powerful tools to organize client information, track subscription plans, manage renewals, and give your customers instant access to their membership status. Say goodbye to spreadsheets and manual tracking – our intuitive dashboard makes client management effortless.</p>
                 <img class="breath section_img" src="./undraw_team-work_i1f3.svg" alt="about">
             </section>
+            <div id="offer_top" class="space_top"></div>
             <section id="offer" class="container">
                 <h2>What We Offer</h2>
                 <p class="disc">Powerful features to streamline your business operations</p>
-                <div class="box_offer d-none d-md-flex">
+                <div class="box_offer d-none d-sm-flex">
                     <div>
                         <div class="icon"><i class="fa-solid fa-user-group" "></i></div>
                         <div class="offer_detail">
@@ -80,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box_offer d-md-none">
+                <div class="box_offer d-sm-none">
                     <div>
                         <details>
                             <summary><span class="icon"><i class="fa-solid fa-user-group" "></i></span><h4>Client Management</h4></summary>
@@ -111,6 +117,7 @@
                 
             </section>
         </div>
+        <div id="for_how_top" class="space_top"></div>
         <section id="for_how" class=" container">
             <h2>Who Can Use This Service</h2>
             <p class="disc">Perfect for various membership-based businesses</p>
@@ -135,7 +142,7 @@
         </section>
         
         <div class="backLayout">
-            
+            <div id="price_top" class="space_top"></div>
             <section id="price">
                 <h2>Pricing</h2>
                 <p class="disc">Choose the plan that fits your business</p>
@@ -238,7 +245,7 @@
                         </div>
                     </div>
             </section>
-
+            <div id="review_top" class="space_top"></div>
             <section id="rate" class="container">
                 <h2>What Our Customers Say</h2>
                 <p class="disc">Real feedback from businesses using SubManager</p>
@@ -386,8 +393,11 @@
         </div>
         
     </main>
+    <a id="go_up" href="#top_body"><i class="fa-solid fa-circle-up" ></i></a>
     <footer >
+        <div id="conec_top" class="space_top"></div>
         <section id="conec">
+            <img src="./images/logo6.png" alt="">
             <div class="cards_">
                 <div class="cards_con">
                     <i class="fa-solid fa-phone" style="color: rgb(255, 255, 255);"></i>
@@ -395,13 +405,13 @@
                     <p><b>+1 (555) 123-4567</b></p>
                 </div>
                 <div class="cards_con">
-                    <i class="fa-solid fa-phone" style="color: rgb(255, 255, 255);"></i>
-                    <p>Phone Number</p>
+                    <i class="fa-regular fa-envelope" style="color: rgb(255, 255, 255);"></i>
+                    <p>Email</p>
                     <p><b>+1 (555) 123-4567</b></p>
                 </div>
                 <div class="cards_con">
-                    <i class="fa-solid fa-phone" style="color: rgb(255, 255, 255);"></i>
-                    <p>Phone Number</p>
+                    <i class="fa-brands fa-whatsapp" style="color: rgb(255, 255, 255);"></i>
+                    <p>Whatsapp</p>
                     <p><b>+1 (555) 123-4567</b></p>
                 </div>
             </div>
