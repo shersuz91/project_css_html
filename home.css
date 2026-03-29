@@ -191,7 +191,7 @@ section{
     padding: 20px 40px;
     border-radius: 7px;
     transform: rotate3d(1, -1, 0, 23deg);
-    box-shadow:inset 0px 0px 0px #333, 6px 6px 0px #afafaf, 7px 7px 0;
+    box-shadow:inset 0px 0px 0px #333, 6px 6px 0px #afafaf, 7px 7px 0  #00000044;
     position: relative;
     transition: .2s ease-in-out;
     overflow: hidden;
@@ -199,11 +199,6 @@ section{
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
-}
-.quick_btn a:hover{
-
-    box-shadow:inset 3px 3px 1px #333, 0px 0px 0px 0px #3355b5, 0px 0px 0px 0px #00000044;
-    transform: rotate3d(1, -1, 0, 23deg) translate(6px, 6px);
 }
 .quick_btn a >*{
     position: relative;
