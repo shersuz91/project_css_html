@@ -20,7 +20,8 @@ header section>*{
     z-index: 9;
 }
 header {
-    background-image: linear-gradient(150deg, #4F39F6 , #155DFC, #8200DB);
+    /* background-image: linear-gradient(150deg, #4F39F6 , #155DFC, #8200DB); */
+    background-color:rgb(255 255 255);
     color: white;
     position: relative;
     height: 50vh;
@@ -59,7 +60,7 @@ nav {
 
 }
 nav.solid{
-    background-image: linear-gradient( #4f39f6 , #155efc, #8300db);
+    background-image: linear-gradient(to left, white,#4a5565);
     box-shadow: 0px 1px 3px #333;
 }
 nav.show_list{
@@ -78,7 +79,7 @@ nav ul {
 }
 
 header section:after {
-content: "";
+/* content: ""; */
 position: absolute;
 width: 100%;
 height: 100%;
@@ -87,7 +88,7 @@ top: 0;
 left: 0;
 z-index: 0;
 }
-nav ul li a {
+nav ul li a, a#panel {
     color: white;
     text-decoration: none;
     display: block;
@@ -95,11 +96,11 @@ nav ul li a {
     font-weight: bold;
     border-radius: 7px;
     transition: .2s;
-    background-color: #406de7;
+    background-color: #959595;
     box-shadow: 0px 0px 2px #333;
     backdrop-filter: blur(5px);
     transform: rotate3d(1, -1, 0, 20deg);
-    box-shadow: inset 0px 0px 0px #333, 5px 5px 0px 1px #3355b5, 6px 6px 0px 1px #00000044;
+    box-shadow: inset 0px 0px 0px #333, 5px 5px 0px 1px #f9a73a, 6px 6px 0px 1px #00000044;
     border: 1px solid #00000044;
     font-size: 16px;
 }
@@ -157,9 +158,9 @@ section{
     transition: .2s;
     border-radius: 10px;
     backdrop-filter: blur(10px);
-    background-color: rgb(66 7 103 / 81%);
+    background-color: #f9a73a;
     transform: rotate3d(1, -1, 0, 36deg);
-    box-shadow: 3px 3px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px #33333358;
+    box-shadow:inset 3px 3px 10px #ea4100, inset -3px -3px 10px #ea4100, 3px 3px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px #33333358;
     animation-delay: .5s;
 
 }
@@ -714,6 +715,11 @@ a#panel {
     text-decoration: none;
     font-weight: bold;
     transition: .4s;
+    background: #959595;
+    align-self: center;
+    height: 40px;
+    padding: 0 5px;
+    border-radius: 10px;
 }
 a#panel span {
     font-size: 51px;
@@ -815,7 +821,7 @@ nav ul li a{
     margin: 0 auto 50px 20px;
     font-size: 30px !important;
     line-height: 48px;
-    box-shadow: 10px 10px 0px 4px rgb(255, 255, 255), 30px 30px 9px 0px #33333358;
+    box-shadow: inset 3px 3px 10px #ea4100, inset -3px -3px 10px #ea4100,10px 10px 0px 4px rgb(255, 255, 255), 30px 30px 9px 0px #33333358;
 }
 
 header section:after{
@@ -949,7 +955,7 @@ backdrop-filter: blur(1px);
     /* margin: 0 222px 50px auto; */
     font-size: 30px !important;
     line-height: 48px;
-    box-shadow: 10px 10px 0px 4px rgb(255, 255, 255), 30px 30px 9px 0px #33333358;
+    box-shadow: inset 3px 3px 10px #ea4100, inset -3px -3px 10px #ea4100,10px 10px 0px 4px rgb(255, 255, 255), 30px 30px 9px 0px #33333358;
 }
    nav ul {
     gap: 10px;
