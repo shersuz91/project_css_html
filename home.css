@@ -21,7 +21,9 @@ header section>*{
 }
 header {
     /* background-image: linear-gradient(150deg, #4F39F6 , #155DFC, #8200DB); */
-    background-color:rgb(255 255 255);
+    /* background-color:rgb(255 255 255); */
+    background: linear-gradient(to right, white,#4a5565);
+
     color: white;
     position: relative;
     height: 50vh;
@@ -124,6 +126,7 @@ section{
 #welcome {
     padding: 100px 10px;
     height: 100vh;
+    color: #4e4444;
 }
 .wel_det{
     position: absolute;
@@ -135,7 +138,7 @@ section{
     padding: 5px 20px;
     width: max-content;
     margin: 0;
-    background: rgb(66 7 103 / 81%);
+     background-color: #ef6a31;
     transform: rotate3d(-6, 5, 1, 40deg);
     box-shadow: 7px 7px 0px;
     border-radius: 10px;
@@ -158,7 +161,7 @@ section{
     transition: .2s;
     border-radius: 10px;
     backdrop-filter: blur(10px);
-    background-color: #f9a73a;
+    background-color: #ef6a31;
     transform: rotate3d(1, -1, 0, 36deg);
     box-shadow:inset 3px 3px 10px #ea4100, inset -3px -3px 10px #ea4100, 3px 3px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px #33333358;
     animation-delay: .5s;
@@ -192,7 +195,7 @@ section{
     padding: 20px 40px;
     border-radius: 7px;
     transform: rotate3d(1, -1, 0, 23deg);
-    box-shadow:inset 0px 0px 0px #333, 6px 6px 0px #afafaf, 7px 7px 0  #00000044;
+    box-shadow:inset 0px 0px 0px #333, 6px 6px 0px #fff9f9, 7.3px 7.3px 0 black;
     position: relative;
     transition: .2s ease-in-out;
     overflow: hidden;
@@ -200,13 +203,14 @@ section{
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
+    color:#4e4444;
 }
 .quick_btn a >*{
     position: relative;
     z-index: 2;
 }
 .contactus:first-child {
-    background: white;
+    background: rgb(255, 250, 250);
     color: black;
 
 }
@@ -215,7 +219,7 @@ section{
     position: absolute !important;
        width: 200px;
     height: 200px;
-    background-color: #155efc;
+    background-color: #ef6a31;
     top: 100%;
     left: 50%;
     z-index: 0 !important;
@@ -225,7 +229,7 @@ section{
 
 }
 .contactus:first-child:hover{
-    color: white;
+    color: #4e4444;
 }
 
 .contactus:first-child:hover::after{
@@ -233,8 +237,8 @@ top: 0;
 border-radius: 0;
 }
 .quick_btn a:last-child:not(.contactus) {
-    color: white;
-    background: white;
+    color: #4e4444;
+    background: rgb(255, 250, 250);
 }
 
 .quick_btn a:last-child:not(.contactus)::after{
@@ -242,7 +246,7 @@ border-radius: 0;
     position: absolute !important;
        width: 100%;
     height: 200px;
-    background-color: #155efc;
+    background-color: #ef6a31;
     top: 0%;
     left: 50%;
     z-index: 0 !important;
@@ -758,7 +762,7 @@ a#panel:hover{
     background-color: #4F39F6;
    }
 header,#welcome {
-    height: 80vh;
+    height: 100vh;
 }
 #conec img{
     bottom: 0;
