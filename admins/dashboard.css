@@ -80,7 +80,20 @@ a.action.phone:hover {
    box-shadow: 0px 0px 10px 2px var(--success);
    cursor:pointer;
 }
-
+@media (max-width: 768px) { 
+   section.flex_box{
+    flex-wrap: wrap;
+   }
+    .business_status{
+            flex: 1 0;
+    }
+    .table_data{
+        overflow: auto;
+    }
+    .table_data h3{
+        position:sticky;
+    }
+ }
 /* Mobile devices Items stack vertically when screen is 600px or less */
 @media screen and (max-width: 600px) {
   .flex_box {

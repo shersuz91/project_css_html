@@ -25,13 +25,22 @@ body{
     z-index: 9999;
     display: none;
 }
-.confirm_box{
-    background-color: white;
+.confirm_box {
+    background-color: #585858;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    color: white;
 }
-
+.confirm_box button{
+    color: white;
+    background-image: linear-gradient(to right, #00ff84, #000000d6);
+    box-shadow: -2px 0px 10px white, inset 4px 0px 10px rgb(186, 186, 186);
+    border-style: unset;
+}
+button#confirm_yes {
+    background-image: linear-gradient(45deg, #ff0000, #000000d6);
+}
 header {
     height: 70px;
     background-color: var(--third_color);

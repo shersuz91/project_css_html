@@ -13,6 +13,14 @@ let admins = [
         "last_name":"christ",
         "phone":"+5123456"
     }
+    ,
+    {   "id":3,
+        "email":"rafee@gmail.com",
+        "pass":"1234",
+        "name":" Mahmudul",
+        "last_name":"Rafee",
+        "phone":"+5123456"
+    }
 ]
 
 
