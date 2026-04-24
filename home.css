@@ -20,9 +20,9 @@ header section>*{
     z-index: 9;
 }
 header {
-    /* background-image: linear-gradient(150deg, #4F39F6 , #155DFC, #8200DB); */
+    background-image: linear-gradient(150deg, #4F39F6 , #155DFC, #8200DB);
     /* background-color:rgb(255 255 255); */
-    background: linear-gradient(to right, white,#4a5565);
+    /* background: linear-gradient(to right, white,#4a5565); */
 
     color: white;
     position: relative;
